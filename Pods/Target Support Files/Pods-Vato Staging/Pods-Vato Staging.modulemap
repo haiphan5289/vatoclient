@@ -1,0 +1,6 @@
+framework module Pods_Vato_Staging {
+  umbrella header "Pods-Vato Staging-umbrella.h"
+
+  export *
+  module * { export * }
+}

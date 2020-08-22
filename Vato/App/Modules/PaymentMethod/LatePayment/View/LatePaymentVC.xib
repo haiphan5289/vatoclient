@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LatePaymentVC" customModule="App" customModuleProvider="target">
+            <connections>
+                <outlet property="cardButton" destination="0UT-L4-FKY" id="LwB-Ku-g8L"/>
+                <outlet property="containerView" destination="BHf-dw-5RY" id="ALC-Gl-B8G"/>
+                <outlet property="tableView" destination="SvM-DO-nhJ" id="DTB-dp-Tqd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="tJ2-j5-kXW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHf-dw-5RY">
+                    <rect key="frame" x="16" y="134" width="343" height="554"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="SvM-DO-nhJ">
+                            <rect key="frame" x="0.0" y="3" width="343" height="503"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UT-L4-FKY">
+                            <rect key="frame" x="0.0" y="506" width="343" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="k7v-Td-oqk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Quản lý thẻ">
+                                <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0UT-L4-FKY" secondAttribute="bottom" id="Ac7-hk-fyg"/>
+                        <constraint firstItem="SvM-DO-nhJ" firstAttribute="top" secondItem="BHf-dw-5RY" secondAttribute="top" constant="3" id="D7W-vX-x5Y"/>
+                        <constraint firstItem="0UT-L4-FKY" firstAttribute="top" secondItem="SvM-DO-nhJ" secondAttribute="bottom" id="J3s-Lu-TRP"/>
+                        <constraint firstAttribute="trailing" secondItem="SvM-DO-nhJ" secondAttribute="trailing" id="ZwM-MK-wOr"/>
+                        <constraint firstItem="0UT-L4-FKY" firstAttribute="trailing" secondItem="SvM-DO-nhJ" secondAttribute="trailing" id="fdv-aY-DJW"/>
+                        <constraint firstItem="SvM-DO-nhJ" firstAttribute="leading" secondItem="BHf-dw-5RY" secondAttribute="leading" id="l5J-0c-1m4"/>
+                        <constraint firstItem="0UT-L4-FKY" firstAttribute="leading" secondItem="SvM-DO-nhJ" secondAttribute="leading" id="n10-fg-gBV"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BHf-dw-5RY" secondAttribute="bottom" constant="90" id="Geg-Ty-cWF"/>
+                <constraint firstItem="BHf-dw-5RY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="90" id="Qx6-Jf-nLX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BHf-dw-5RY" secondAttribute="trailing" constant="16" id="SAh-m1-Lc5"/>
+                <constraint firstItem="BHf-dw-5RY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="uLw-lh-GDi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

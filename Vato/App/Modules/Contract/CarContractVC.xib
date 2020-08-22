@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarContractVC">
+            <connections>
+                <outlet property="btnRequest" destination="0H9-bQ-FGg" id="cCE-PC-DDc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YGp-pt-YVy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-Qz-ONw">
+                    <rect key="frame" x="0.0" y="44" width="375" height="66"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xem thông tin, tham khảo giá cước thuê xe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVj-KX-o3a">
+                            <rect key="frame" x="16" y="16.333333333333339" width="207" height="33.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIc-b5-bH0">
+                            <rect key="frame" x="239" y="15" width="120" height="36"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="SDr-cU-fQ7"/>
+                                <constraint firstAttribute="width" constant="120" id="n33-k8-SPZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Xem bảng giá">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RIc-b5-bH0" secondAttribute="trailing" constant="16" id="1zO-Vw-dgi"/>
+                        <constraint firstItem="RIc-b5-bH0" firstAttribute="centerY" secondItem="eJq-Qz-ONw" secondAttribute="centerY" id="CZk-1V-CWs"/>
+                        <constraint firstAttribute="height" constant="66" id="WCp-9q-1Bq"/>
+                        <constraint firstItem="AVj-KX-o3a" firstAttribute="leading" secondItem="eJq-Qz-ONw" secondAttribute="leading" constant="16" id="fXK-6Z-9Kq"/>
+                        <constraint firstItem="RIc-b5-bH0" firstAttribute="leading" secondItem="AVj-KX-o3a" secondAttribute="trailing" constant="16" id="kWH-LR-7QJ"/>
+                        <constraint firstItem="AVj-KX-o3a" firstAttribute="centerY" secondItem="eJq-Qz-ONw" secondAttribute="centerY" id="mAc-x3-vUT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H9-bQ-FGg">
+                    <rect key="frame" x="16" y="714" width="343" height="48"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.32156862745098036" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="FHS-Gr-b3r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="Gửi yêu cầu">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0H9-bQ-FGg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Efa-eh-q3B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0H9-bQ-FGg" secondAttribute="trailing" constant="16" id="JwE-MV-U4k"/>
+                <constraint firstItem="eJq-Qz-ONw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fed-mM-KoE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0H9-bQ-FGg" secondAttribute="bottom" constant="16" id="icN-cD-U0z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eJq-Qz-ONw" secondAttribute="trailing" id="vjg-wq-aZn"/>
+                <constraint firstItem="eJq-Qz-ONw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xBw-xs-DBY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+</document>

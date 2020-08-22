@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="34" id="KGk-i7-Jjw" customClass="FCInvoiceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thứ 2 20/09" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-Lg-Ync">
+                        <rect key="frame" x="10" y="29" width="50" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="CFH-NF-bLC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="690.000đ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsL-4R-p5U">
+                        <rect key="frame" x="120" y="15" width="75" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nạp tiền" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-Sf-l4Q">
+                        <rect key="frame" x="256.5" y="15" width="54.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.81744518119999998" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Chuyển tiền qua sdt 01695305035" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpz-ft-jJ3">
+                        <rect key="frame" x="120" y="41" width="191" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVE-WD-9HK">
+                        <rect key="frame" x="70" y="25" width="40" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cashin" translatesAutoresizingMaskIntoConstraints="NO" id="jhU-fr-1ou">
+                                <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jhU-fr-1ou" secondAttribute="height" multiplier="1:1" id="NWB-iQ-6jv"/>
+                                    <constraint firstAttribute="width" constant="20" id="hbM-Fq-KuA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhU-fr-1ou" firstAttribute="centerX" secondItem="QVE-WD-9HK" secondAttribute="centerX" id="1DW-ID-do9"/>
+                            <constraint firstAttribute="width" constant="40" id="aMc-qi-6r1"/>
+                            <constraint firstAttribute="width" secondItem="QVE-WD-9HK" secondAttribute="height" multiplier="1:1" id="u30-6f-bPK"/>
+                            <constraint firstItem="jhU-fr-1ou" firstAttribute="centerY" secondItem="QVE-WD-9HK" secondAttribute="centerY" id="u5Q-DZ-w5f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cpz-ft-jJ3" secondAttribute="bottom" constant="15" id="30g-lY-EIr"/>
+                    <constraint firstItem="QVE-WD-9HK" firstAttribute="leading" secondItem="g2A-Lg-Ync" secondAttribute="trailing" constant="10" id="4y7-O2-Rlu"/>
+                    <constraint firstItem="F9t-Sf-l4Q" firstAttribute="top" secondItem="lsL-4R-p5U" secondAttribute="top" id="E4M-za-tML"/>
+                    <constraint firstItem="cpz-ft-jJ3" firstAttribute="trailing" secondItem="F9t-Sf-l4Q" secondAttribute="trailing" id="G7h-Fm-JSY"/>
+                    <constraint firstItem="cpz-ft-jJ3" firstAttribute="leading" secondItem="lsL-4R-p5U" secondAttribute="leading" id="Nej-d3-U7L"/>
+                    <constraint firstItem="cpz-ft-jJ3" firstAttribute="top" secondItem="lsL-4R-p5U" secondAttribute="bottom" constant="5" id="OgO-T9-ZYQ"/>
+                    <constraint firstItem="g2A-Lg-Ync" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RF5-LS-fSV"/>
+                    <constraint firstItem="QVE-WD-9HK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Sak-fO-V6P"/>
+                    <constraint firstItem="lsL-4R-p5U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bra-fp-cx9"/>
+                    <constraint firstAttribute="trailing" secondItem="F9t-Sf-l4Q" secondAttribute="trailing" constant="10" id="eyC-Y9-pDC"/>
+                    <constraint firstItem="lsL-4R-p5U" firstAttribute="leading" secondItem="QVE-WD-9HK" secondAttribute="trailing" constant="10" id="i1B-7l-BeD"/>
+                    <constraint firstItem="g2A-Lg-Ync" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="m3M-jV-XDF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="bgImage" destination="QVE-WD-9HK" id="2uj-ny-nb1"/>
+                <outlet property="img" destination="jhU-fr-1ou" id="HCp-j3-70x"/>
+                <outlet property="invoiceId" destination="cpz-ft-jJ3" id="8r4-0X-AfC"/>
+                <outlet property="lblDate" destination="g2A-Lg-Ync" id="NGy-xv-KlC"/>
+                <outlet property="lblTransType" destination="F9t-Sf-l4Q" id="TyA-3d-ad1"/>
+                <outlet property="lblValue" destination="lsL-4R-p5U" id="som-z1-rvR"/>
+            </connections>
+            <point key="canvasLocation" x="121.5" y="77"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cashin" width="30" height="30"/>
+    </resources>
+</document>

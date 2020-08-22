@@ -1,0 +1,114 @@
+{
+    "bookingServices": {
+        "active": 1,
+        "id": 200,
+        "items": [
+            {
+                "active": 1,
+                "data": "",
+                "description": "",
+                "id": 201,
+                "imageURL": "",
+                "title": "Gọi Xe 2 Bánh"
+            },
+            {
+                "active": 1,
+                "data": "",
+                "description": "",
+                "id": 202,
+                "imageURL": "",
+                "title": "Gọi Ô Tô"
+            },
+            {
+                "active": 1,
+                "data": "",
+                "description": "",
+                "id": 204,
+                "imageURL": "",
+                "title": "Giao Hàng"
+            },
+            {
+                "active": 0,
+                "data": "",
+                "description": "",
+                "id": 206,
+                "imageURL": "",
+                "title": "Mua vé\nPhương Trang"
+            },
+            {
+                "active": 0,
+                "data": "",
+                "description": "",
+                "id": 205,
+                "imageURL": "",
+                "title": "Gọi Đồ Ăn"
+            },
+            {
+                "active": 0,
+                "data": "",
+                "description": "",
+                "id": 203,
+                "imageURL": "",
+                "title": "Gọi TAXI"
+            }
+        ],
+        "layout_type": 2,
+        "name": ""
+    },
+    "promotions": {
+        "active": 1,
+        "id": 300,
+        "items": [
+            {
+                "active": 1,
+                "data": "53",
+                "description": "🛵 Nhập mã BIKE08K Chỉ TÁM NGÀN đồng cho lộ trình 6km",
+                "id": 301,
+                "imageURL": "https://firebasestorage.googleapis.com/v0/b/facecar-29ae7.appspot.com/o/campaigns%2Fcover_bike_8k.png?alt=media&token=d2bc281f-7ce2-4862-82ea-22261c0b470e",
+                "title": "[VATO BIKE] SIÊU PHẨM ĐỒNG GIÁ 8K "
+            },
+            {
+                "active": 1,
+                "data": "64",
+                "description": "Để tri ân và tạo lên những chuyến đi ý nghĩa, VATO hứa hẹn mang lại nhiều chương trình hấp dẫn nhất cho khách hàng.",
+                "id": 302,
+                "imageURL": "https://firebasestorage.googleapis.com/v0/b/facecar-29ae7.appspot.com/o/campaigns%2Fvato_express.png?alt=media&token=38cf2364-c084-4476-9131-952dca8d1b7a",
+                "title": "VATO Giao Hàng đồng giá 9K"
+            }
+        ],
+        "layout_type": 3,
+        "name": "Chương trình khuyến mãi"
+    },
+    "vatopay": {
+        "active": 1,
+        "id": 100,
+        "items": [
+            {
+                "active": 1,
+                "data": "",
+                "description": "",
+                "id": 103,
+                "imageURL": "",
+                "title": "Nạp VATOPay"
+            },
+            {
+                "active": 1,
+                "data": "",
+                "description": "",
+                "id": 104,
+                "imageURL": "",
+                "title": "Giao dịch"
+            },
+            {
+                "active": 1,
+                "data": "",
+                "description": "",
+                "id": 105,
+                "imageURL": "",
+                "title": "Khuyến mãi"
+            }
+        ],
+        "layout_type": 1,
+        "name": "VATOPay"
+    }
+}

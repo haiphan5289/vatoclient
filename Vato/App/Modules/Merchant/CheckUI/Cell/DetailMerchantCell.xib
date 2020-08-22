@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DetailMerchantCell" id="KGk-i7-Jjw" customClass="DetailMerchantCell" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DmW-IW-b5u">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="99.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Delisa House - THĐ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63b-Dk-jv7">
+                                <rect key="frame" x="16" y="16" width="250" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19.5" id="fgL-Nx-bhu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC0-7r-KC8">
+                                <rect key="frame" x="26" y="43.5" width="250" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_trip_pending" translatesAutoresizingMaskIntoConstraints="NO" id="98i-Fx-Hqk">
+                                <rect key="frame" x="26" y="65.5" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Nfs-sp-uwR"/>
+                                    <constraint firstAttribute="width" constant="18" id="pr4-ex-UZg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chờ duyệt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-A5-nml">
+                                <rect key="frame" x="48" y="66" width="228" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gC0-7r-KC8" firstAttribute="leading" secondItem="63b-Dk-jv7" secondAttribute="leading" constant="10" id="96O-LV-o6Q"/>
+                            <constraint firstAttribute="bottom" secondItem="98i-Fx-Hqk" secondAttribute="bottom" constant="16" id="Guu-Pr-Zhr"/>
+                            <constraint firstItem="EZa-A5-nml" firstAttribute="centerY" secondItem="98i-Fx-Hqk" secondAttribute="centerY" id="Pb3-gX-w28"/>
+                            <constraint firstAttribute="trailing" secondItem="63b-Dk-jv7" secondAttribute="trailing" constant="20" id="bkt-Kr-IoH"/>
+                            <constraint firstItem="63b-Dk-jv7" firstAttribute="top" secondItem="DmW-IW-b5u" secondAttribute="top" constant="16" id="cB5-vl-o4H"/>
+                            <constraint firstItem="98i-Fx-Hqk" firstAttribute="leading" secondItem="gC0-7r-KC8" secondAttribute="leading" id="eA5-IA-Etg"/>
+                            <constraint firstItem="63b-Dk-jv7" firstAttribute="leading" secondItem="DmW-IW-b5u" secondAttribute="leading" constant="16" id="gzM-pI-KVO"/>
+                            <constraint firstItem="EZa-A5-nml" firstAttribute="leading" secondItem="98i-Fx-Hqk" secondAttribute="trailing" constant="4" id="h1e-Kd-IgM"/>
+                            <constraint firstItem="98i-Fx-Hqk" firstAttribute="top" secondItem="gC0-7r-KC8" secondAttribute="bottom" constant="8" id="ioZ-kA-F2A"/>
+                            <constraint firstItem="gC0-7r-KC8" firstAttribute="top" secondItem="63b-Dk-jv7" secondAttribute="bottom" constant="8" id="kle-ZA-mgA"/>
+                            <constraint firstAttribute="trailing" secondItem="EZa-A5-nml" secondAttribute="trailing" constant="10" id="vCx-kp-JgD"/>
+                            <constraint firstAttribute="trailing" secondItem="gC0-7r-KC8" secondAttribute="trailing" constant="10" id="xSQ-IA-W3t"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DmW-IW-b5u" secondAttribute="trailing" id="1iT-o5-ruC"/>
+                    <constraint firstItem="DmW-IW-b5u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QsF-47-6vT"/>
+                    <constraint firstAttribute="bottom" secondItem="DmW-IW-b5u" secondAttribute="bottom" id="RCi-M3-EIA"/>
+                    <constraint firstItem="DmW-IW-b5u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Snf-di-zBe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressText" destination="gC0-7r-KC8" id="ndg-1M-8xt"/>
+                <outlet property="imvStatus" destination="98i-Fx-Hqk" id="Uzf-g2-L6v"/>
+                <outlet property="lblName" destination="63b-Dk-jv7" id="idJ-zR-iX4"/>
+                <outlet property="lblStatus" destination="EZa-A5-nml" id="0GA-fP-Ffb"/>
+            </connections>
+            <point key="canvasLocation" x="41.600000000000001" y="46.776611694152926"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_trip_pending" width="18" height="18"/>
+    </resources>
+</document>

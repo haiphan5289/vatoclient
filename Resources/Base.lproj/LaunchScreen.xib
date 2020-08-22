@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_flashcreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ypk-pb-5UQ">
+                    <rect key="frame" x="0.0" y="284.33333333333331" width="375" height="527.66666666666674"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_vato" translatesAutoresizingMaskIntoConstraints="NO" id="2HJ-b5-6li">
+                    <rect key="frame" x="83" y="203" width="209" height="84"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_futa" translatesAutoresizingMaskIntoConstraints="NO" id="2k4-iQ-839">
+                    <rect key="frame" x="76.666666666666686" y="637" width="222" height="118"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.37254901960784315" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ypk-pb-5UQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.65" id="218-ZC-gex"/>
+                <constraint firstItem="2HJ-b5-6li" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="0.25" id="FDt-KH-gzV"/>
+                <constraint firstAttribute="trailing" secondItem="Ypk-pb-5UQ" secondAttribute="trailing" id="Ze5-uL-qku"/>
+                <constraint firstAttribute="bottom" secondItem="Ypk-pb-5UQ" secondAttribute="bottom" id="f1R-8w-9ue"/>
+                <constraint firstAttribute="bottom" secondItem="2k4-iQ-839" secondAttribute="bottom" constant="57" id="jV4-Md-IHz"/>
+                <constraint firstItem="2HJ-b5-6li" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oL7-9m-Ohz"/>
+                <constraint firstItem="Ypk-pb-5UQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sco-Po-YKO"/>
+                <constraint firstItem="2k4-iQ-839" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xBs-T2-aU4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="47.200000000000003" y="35.467980295566505"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_flashcreen" width="375" height="470"/>
+        <image name="ic_logo_futa" width="222" height="118"/>
+        <image name="ic_logo_vato" width="209" height="84"/>
+    </resources>
+</document>

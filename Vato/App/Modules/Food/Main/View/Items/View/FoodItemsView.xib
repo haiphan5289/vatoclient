@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FoodItemsView" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="241"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSo-WG-HSY">
+                    <rect key="frame" x="16" y="16" width="38.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEJ-If-Tug">
+                    <rect key="frame" x="356" y="11" width="42" height="28"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7Mc-aJ-ijW">
+                    <rect key="frame" x="0.0" y="62" width="414" height="179"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="179" id="1Xd-vV-cQk"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="16" minimumInteritemSpacing="16" id="zdh-pD-RNI">
+                        <size key="itemSize" width="152" height="178"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OSo-WG-HSY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="5je-SA-3QO"/>
+                <constraint firstItem="7Mc-aJ-ijW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JA5-xs-XqD"/>
+                <constraint firstItem="KEJ-If-Tug" firstAttribute="centerY" secondItem="OSo-WG-HSY" secondAttribute="centerY" id="Q4E-7X-I7i"/>
+                <constraint firstItem="OSo-WG-HSY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="VlR-3G-fhv"/>
+                <constraint firstAttribute="trailing" secondItem="7Mc-aJ-ijW" secondAttribute="trailing" id="X6x-j2-zSG"/>
+                <constraint firstAttribute="bottom" secondItem="7Mc-aJ-ijW" secondAttribute="bottom" id="mmq-P2-e2B"/>
+                <constraint firstAttribute="trailing" secondItem="KEJ-If-Tug" secondAttribute="trailing" constant="16" id="zpp-GC-Ai6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMore" destination="KEJ-If-Tug" id="BDN-8U-eaQ"/>
+                <outlet property="collectionView" destination="7Mc-aJ-ijW" id="9Md-gU-u70"/>
+                <outlet property="lblTitle" destination="OSo-WG-HSY" id="NXR-iE-7SS"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="z3j-yc-uIn">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1s2-Io-y1u" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFE-hk-Nue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247" y="-98"/>
+        </scene>
+        <!--Tutorial Startup Page View Controller-->
+        <scene sceneID="pbJ-dW-ztZ">
+            <objects>
+                <viewController storyboardIdentifier="FCTutorialStartupPageViewController" id="Xds-EO-GYE" customClass="FCTutorialStartupPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZNT-r8-X97"/>
+                        <viewControllerLayoutGuide type="bottom" id="PF5-E6-1w1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IDn-Tu-RHW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCV-70-AZ1">
+                                <rect key="frame" x="50" y="666" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R0F-QM-Sbx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Tiếp tục">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueClicked:" destination="ZE1-tA-NXP" eventType="touchUpInside" id="Xkg-b9-OHM"/>
+                                    <action selector="nextClicked:" destination="Xds-EO-GYE" eventType="touchUpInside" id="acx-iJ-68R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.47058823529999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LCV-70-AZ1" firstAttribute="centerX" secondItem="IDn-Tu-RHW" secondAttribute="centerX" id="JVK-Ph-UWP"/>
+                            <constraint firstItem="PF5-E6-1w1" firstAttribute="top" secondItem="LCV-70-AZ1" secondAttribute="bottom" constant="20" id="cPp-E9-HLz"/>
+                            <constraint firstItem="LCV-70-AZ1" firstAttribute="leading" secondItem="IDn-Tu-RHW" secondAttribute="leading" constant="50" id="k1R-io-tRI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnContinue" destination="LCV-70-AZ1" id="EOr-2C-5Z5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnh-bW-WQP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="268"/>
+        </scene>
+        <!--Tutorial Start Up View Controller-->
+        <scene sceneID="bXD-Xu-8U3">
+            <objects>
+                <viewController storyboardIdentifier="FCTutorialStartUpViewController" id="ZE1-tA-NXP" customClass="FCTutorialStartUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DGL-aV-TSC"/>
+                        <viewControllerLayoutGuide type="bottom" id="eWI-2e-hGg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mnm-Re-ee2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tut-1" translatesAutoresizingMaskIntoConstraints="NO" id="tex-z5-xkP">
+                                <rect key="frame" x="112.66666666666669" y="40" width="189" height="346"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dễ dàng lựa chọn hành trình với thông tin giá cả rõ ràng." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9M-Jt-mdH">
+                                <rect key="frame" x="50" y="401" width="314" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="W9M-Jt-mdH" firstAttribute="centerX" secondItem="mnm-Re-ee2" secondAttribute="centerX" id="4L1-gX-KlD"/>
+                            <constraint firstItem="W9M-Jt-mdH" firstAttribute="leading" secondItem="mnm-Re-ee2" secondAttribute="leading" constant="50" id="9Ac-VG-dyx"/>
+                            <constraint firstItem="tex-z5-xkP" firstAttribute="top" secondItem="DGL-aV-TSC" secondAttribute="bottom" constant="20" id="QEo-u7-tRe"/>
+                            <constraint firstItem="W9M-Jt-mdH" firstAttribute="top" secondItem="tex-z5-xkP" secondAttribute="bottom" constant="15" id="Rir-uh-JnJ"/>
+                            <constraint firstItem="tex-z5-xkP" firstAttribute="centerX" secondItem="mnm-Re-ee2" secondAttribute="centerX" id="qaZ-Pa-9Cc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgBg" destination="tex-z5-xkP" id="AGh-vY-VVE"/>
+                        <outlet property="lblTitle" destination="W9M-Jt-mdH" id="BgL-lU-UkW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Slb-PZ-OVz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="586.05697151424295"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tut-1" width="189" height="346"/>
+    </resources>
+</document>

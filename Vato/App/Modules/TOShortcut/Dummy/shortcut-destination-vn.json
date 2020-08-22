@@ -1,0 +1,21 @@
+
+{
+    "data":
+    [
+        {
+            "id": 4,
+            "name": "S.O.S",
+            "description": "Gọi tổng đài",
+            "cellType": 0,
+            "type": 3
+        },
+        {
+            "id": 10,
+            "name": "Thêm điểm đến",
+            "description": "Có thể thêm nhiều điểm đến",
+            "cellType": 0,
+            "type": 9
+        }
+    ],
+    "status": 200
+}

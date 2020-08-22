@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketChooseDestinationVC" customModule="VATO" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTableView" destination="Yyi-H2-dkV" id="Pd1-sw-Bvq"/>
+                <outlet property="searchControl" destination="VT6-u8-A7c" id="6pI-iJ-k1B"/>
+                <outlet property="view" destination="iN0-l3-epB" id="4Fv-PV-aHz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="VT6-u8-A7c">
+                    <rect key="frame" x="12" y="28" width="351" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="52" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yyi-H2-dkV">
+                    <rect key="frame" x="0.0" y="92" width="375" height="575"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yyi-H2-dkV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Fhu-56-JcT"/>
+                <constraint firstItem="Yyi-H2-dkV" firstAttribute="top" secondItem="VT6-u8-A7c" secondAttribute="bottom" constant="8" id="JYr-zw-WQ6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Yyi-H2-dkV" secondAttribute="bottom" id="Kax-Gj-SkY"/>
+                <constraint firstItem="VT6-u8-A7c" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="OXl-hc-B3v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VT6-u8-A7c" secondAttribute="trailing" constant="12" id="iZ9-nK-q7z"/>
+                <constraint firstItem="VT6-u8-A7c" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="mpa-zB-EG1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yyi-H2-dkV" secondAttribute="trailing" id="rQb-S1-fmT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
+        </view>
+    </objects>
+</document>

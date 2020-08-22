@@ -1,0 +1,207 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "2.68.0"
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+generated_fastfile_id "a5da0162-95f3-4743-aa3d-4fc6d257fbce"
+
+default_platform :ios
+
+# Fastfile actions accept additional configuration, but
+# don't worry, fastlane will prompt you for required
+# info which you can add here later
+lane :dev do
+  # build your iOS app
+  build_number = increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  version = get_version_number(
+    xcodeproj: "Vato.xcodeproj",
+    target: "Vato DEV"
+  )
+
+  notes = release_notes
+
+  build_app(
+    scheme: "Vato DEV",
+    workspace: "Vato.xcworkspace",
+    include_bitcode: false,
+    export_method: "development"
+  )
+
+  firebase_app_distribution(
+      app: "1:317038682796:ios:ac6050a05d1035e3",
+      groups: "Tester",
+      release_notes: notes
+  )
+
+  slack(
+       message: "iOS Client DEV new build",
+       success: true,
+       slack_url: "https://hooks.slack.com/services/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",
+       payload: {
+         "channel": "@channel"
+       },
+       default_payloads: [:git_branch, :last_git_commit_message],
+       attachment_properties: {
+           fields: [
+               {
+                  title: "App Type",
+                  value: "Client DEV"
+               },
+               {
+                   title: "Where",
+                   value: "Firebase App Distribution"
+               },
+               {
+                  title: "App Version",
+                  value: version
+               },
+               {
+                   title: "Build number",
+                   value: build_number
+               },
+               {
+                   title: "Release Notes",
+                   value: notes
+               }
+           ]
+       }
+   )
+
+end
+
+lane :production do
+  # build your iOS app
+  build_number = increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  notes = release_notes
+  version = get_version_number(
+    xcodeproj: "Vato.xcodeproj",
+    target: "Vato"
+  )
+
+  build_app(
+    scheme: "Vato",
+    workspace: "Vato.xcworkspace",
+    include_bitcode: false,
+    export_method: "development"
+  )
+
+  firebase_app_distribution(
+    app: "1:639535783968:ios:4342efdaf3dbccfd",
+    groups: "Tester",
+    release_notes: notes
+  )
+
+  slack(
+       message: "iOS Client Pro new build",
+       success: true,
+       slack_url: "https://hooks.slack.com/services/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",
+       payload: {
+         "channel" => "@channel"
+       },
+       default_payloads: [:git_branch, :last_git_commit_message],
+       attachment_properties: {
+           fields: [
+               {
+                  title: "App Type",
+                  value: "Client Pro"
+               },
+               {
+                   title: "Where",
+                   value: "Firebase App Distribution"
+               },
+               {
+                  title: "App Version",
+                  value: version
+               },
+               {
+                   title: "Build number",
+                   value: build_number
+               },
+               {
+                   title: "Release Notes",
+                   value: notes
+               }
+           ]
+       }
+   )
+
+end
+
+lane :staging do
+  # build your iOS app
+  increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  build_app(
+    scheme: "Vato Staging",
+    workspace: "Vato.xcworkspace",
+    include_bitcode: false,
+    export_method: "development"
+  )
+
+  # upload to Beta by Crashlytics
+  crashlytics(
+    notes: release_notes,
+    api_token: "b52db4225ef4fd0f38bdbe686be05c4b9e7a7ed2",
+    build_secret: "71c895042c90ff6bf5103127d144830bd55374a2098ca2413047639dbb0f33a9"
+  )
+
+end
+
+lane :release do
+
+  increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  # build your iOS app
+  build_app(
+    scheme: "Vato",
+    workspace: "Vato.xcworkspace",
+    include_bitcode: false,
+    export_method: "app-store"
+  )
+
+  # upload to Testflight
+  pilot(skip_waiting_for_build_processing: true)
+end
+
+lane :beta do
+
+  increment_build_number(
+    build_number: Time.now.strftime("%Y%m%d%H%M")
+  )
+
+  # build your iOS app
+  build_app(
+    scheme: "Vato DEV",
+    workspace: "Vato.xcworkspace",
+    include_bitcode: false,
+    export_method: "app-store"
+  )
+
+  # increment_build_number
+
+  # upload to Testflight
+  pilot(skip_waiting_for_build_processing: true)
+end
+
+desc "Generate release notes"
+private_lane :release_notes do
+    changelog = changelog_from_git_commits(
+			commits_count: 5,
+			pretty: "- (%ae) %s",
+			date_format: "short",
+			merge_commit_filtering: "exclude_merges")
+    "Automatic build (Last 5 PR):\n#{changelog}"
+end

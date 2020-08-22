@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_ticket_promotion.pdf",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "left" : 4,
+          "right" : 2
+        },
+        "center" : {
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "3-part-horizontal"
+      }
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

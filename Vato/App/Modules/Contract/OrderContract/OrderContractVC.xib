@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderContractVC">
+            <connections>
+                <outlet property="btFuture" destination="PrI-mD-mUp" id="0yC-Yj-Ezd"/>
+                <outlet property="btHistory" destination="fuQ-eR-Yap" id="x0m-lY-2sc"/>
+                <outlet property="indicatorView" destination="YKF-pI-sx9" id="yzg-3x-kHD"/>
+                <outlet property="tableView" destination="mqD-kP-a06" id="l7U-d3-B8S"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YGp-pt-YVy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vrk-8L-EdL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrI-mD-mUp">
+                            <rect key="frame" x="0.0" y="0.0" width="187.5" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="yHP-tt-ZMp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuQ-eR-Yap">
+                            <rect key="frame" x="187.5" y="0.0" width="187.5" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="5m0-7v-JG7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="uXj-cP-9cw"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YKF-pI-sx9">
+                    <rect key="frame" x="0.0" y="48" width="187.5" height="2"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="qmt-0V-lY2"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="mqD-kP-a06">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mqD-kP-a06" secondAttribute="trailing" id="1Vh-cH-PJG"/>
+                <constraint firstItem="mqD-kP-a06" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3tp-HQ-Sp9"/>
+                <constraint firstItem="YKF-pI-sx9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8mv-CB-Vbs"/>
+                <constraint firstItem="Vrk-8L-EdL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Bl1-2c-jqj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vrk-8L-EdL" secondAttribute="trailing" id="K2R-ZF-5ra"/>
+                <constraint firstItem="Vrk-8L-EdL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N9t-Ag-hM1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mqD-kP-a06" secondAttribute="bottom" id="T0r-wn-lTP"/>
+                <constraint firstItem="YKF-pI-sx9" firstAttribute="width" secondItem="Vrk-8L-EdL" secondAttribute="width" multiplier="0.5" id="U9F-Ng-KA6"/>
+                <constraint firstItem="mqD-kP-a06" firstAttribute="top" secondItem="YKF-pI-sx9" secondAttribute="bottom" id="fR6-Jk-QLn"/>
+                <constraint firstItem="YKF-pI-sx9" firstAttribute="top" secondItem="Vrk-8L-EdL" secondAttribute="bottom" id="vbD-GF-sBX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+</document>

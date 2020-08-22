@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CreateMerchantTypeCell" id="KGk-i7-Jjw" customClass="CreateMerchantTypeCell" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SjP-7Q-CvU">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="71.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6a2-1M-zGb">
+                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Fg2-ZR-aK0"/>
+                                    <constraint firstAttribute="height" constant="40" id="i2k-58-gCo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scr-IE-vMz">
+                                <rect key="frame" x="80" y="26.5" width="182" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="V5x-Jf-jLl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Scr-IE-vMz" firstAttribute="centerY" secondItem="SjP-7Q-CvU" secondAttribute="centerY" id="Gm6-oc-3nP"/>
+                            <constraint firstItem="6a2-1M-zGb" firstAttribute="top" secondItem="SjP-7Q-CvU" secondAttribute="top" constant="16" id="Rsd-Ro-zqi"/>
+                            <constraint firstItem="6a2-1M-zGb" firstAttribute="leading" secondItem="SjP-7Q-CvU" secondAttribute="leading" constant="16" id="S03-X0-h5i"/>
+                            <constraint firstAttribute="bottom" secondItem="6a2-1M-zGb" secondAttribute="bottom" constant="15.5" id="T9x-NK-rxN"/>
+                            <constraint firstItem="Scr-IE-vMz" firstAttribute="leading" secondItem="6a2-1M-zGb" secondAttribute="trailing" constant="24" id="ghw-3B-s84"/>
+                            <constraint firstAttribute="trailing" secondItem="Scr-IE-vMz" secondAttribute="trailing" constant="24" id="sTW-iF-ntb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SjP-7Q-CvU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Bfp-vy-pXA"/>
+                    <constraint firstItem="SjP-7Q-CvU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CXh-Tv-Iak"/>
+                    <constraint firstAttribute="trailing" secondItem="SjP-7Q-CvU" secondAttribute="trailing" id="Sgm-un-vjv"/>
+                    <constraint firstAttribute="bottom" secondItem="SjP-7Q-CvU" secondAttribute="bottom" id="egl-Nd-OJp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgCategories" destination="6a2-1M-zGb" id="kg3-IK-upc"/>
+                <outlet property="nameCategories" destination="Scr-IE-vMz" id="4dN-oe-KXj"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="113.16964285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

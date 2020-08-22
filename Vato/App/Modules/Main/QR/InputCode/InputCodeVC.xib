@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputCodeVC" customModule="VATO" customModuleProvider="target">
+            <connections>
+                <outlet property="backGroundButton" destination="PTF-eS-Tft" id="bmU-c8-Jgy"/>
+                <outlet property="btnClose" destination="L45-07-xhe" id="ykT-LA-cvP"/>
+                <outlet property="btnConfirm" destination="sTr-zm-Ksd" id="Adn-hV-pcr"/>
+                <outlet property="codeTextField" destination="3wh-YX-gas" id="FLD-H9-kcB"/>
+                <outlet property="lbTitle" destination="UHv-v5-BwN" id="Pd4-Kk-Ewc"/>
+                <outlet property="noteView" destination="d5S-3x-6fr" id="FDv-d6-7or"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vat-cQ-2gY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTF-eS-Tft">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70273437500000002" colorSpace="calibratedRGB"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5S-3x-6fr" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="680" width="414" height="216"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập mã bằng tay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-v5-BwN">
+                            <rect key="frame" x="56" y="24" width="302" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L45-07-xhe">
+                            <rect key="frame" x="358" y="0.0" width="56" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="bDF-YA-G1f"/>
+                                <constraint firstAttribute="width" constant="56" id="mT4-9O-8fG"/>
+                            </constraints>
+                            <state key="normal" image="ic_close"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTr-zm-Ksd">
+                            <rect key="frame" x="24" y="143" width="366" height="40"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7x4-A3-cRX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal" title="Gửi mã">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã được in trên vé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSN-3b-2jw">
+                            <rect key="frame" x="24" y="69" width="113" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.38431372549999998" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3wh-YX-gas">
+                            <rect key="frame" x="24" y="89" width="366" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="0.39883882705479451" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="3wh-YX-gas" firstAttribute="top" secondItem="wSN-3b-2jw" secondAttribute="bottom" constant="4" id="0o7-Bv-cT5"/>
+                        <constraint firstAttribute="height" constant="216" id="2Ci-qw-XSZ"/>
+                        <constraint firstItem="wSN-3b-2jw" firstAttribute="leading" secondItem="d5S-3x-6fr" secondAttribute="leading" constant="24" id="Auy-Wc-OEW"/>
+                        <constraint firstAttribute="trailing" secondItem="3wh-YX-gas" secondAttribute="trailing" constant="24" id="DYD-G3-ccD"/>
+                        <constraint firstItem="sTr-zm-Ksd" firstAttribute="leading" secondItem="d5S-3x-6fr" secondAttribute="leading" constant="24" id="Dic-cd-TTe"/>
+                        <constraint firstItem="UHv-v5-BwN" firstAttribute="leading" secondItem="d5S-3x-6fr" secondAttribute="leading" constant="56" id="E0C-xS-lk3"/>
+                        <constraint firstItem="sTr-zm-Ksd" firstAttribute="top" secondItem="3wh-YX-gas" secondAttribute="bottom" constant="24" id="G1z-OY-4SI"/>
+                        <constraint firstAttribute="trailing" secondItem="sTr-zm-Ksd" secondAttribute="trailing" constant="24" id="GjX-ru-I0Y"/>
+                        <constraint firstItem="3wh-YX-gas" firstAttribute="leading" secondItem="d5S-3x-6fr" secondAttribute="leading" constant="24" id="J89-ET-wxT"/>
+                        <constraint firstItem="wSN-3b-2jw" firstAttribute="top" secondItem="UHv-v5-BwN" secondAttribute="bottom" constant="23" id="O04-yG-yrv"/>
+                        <constraint firstItem="L45-07-xhe" firstAttribute="top" secondItem="d5S-3x-6fr" secondAttribute="top" id="SM2-tc-SU9"/>
+                        <constraint firstItem="L45-07-xhe" firstAttribute="leading" secondItem="UHv-v5-BwN" secondAttribute="trailing" id="SWt-FZ-YgK"/>
+                        <constraint firstItem="UHv-v5-BwN" firstAttribute="top" secondItem="d5S-3x-6fr" secondAttribute="top" constant="24" id="bvf-6Q-n4K"/>
+                        <constraint firstAttribute="trailing" secondItem="L45-07-xhe" secondAttribute="trailing" id="cHw-Ir-Z5M"/>
+                        <constraint firstItem="L45-07-xhe" firstAttribute="top" secondItem="d5S-3x-6fr" secondAttribute="top" id="gbe-Ky-jEY"/>
+                        <constraint firstAttribute="trailing" secondItem="L45-07-xhe" secondAttribute="trailing" id="im4-ks-yCG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PTF-eS-Tft" secondAttribute="bottom" id="OJZ-Kq-qBL"/>
+                <constraint firstItem="PTF-eS-Tft" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="S9r-sE-9PA"/>
+                <constraint firstItem="d5S-3x-6fr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SDh-aS-wiQ"/>
+                <constraint firstItem="PTF-eS-Tft" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cFE-2F-c6i"/>
+                <constraint firstAttribute="bottom" secondItem="d5S-3x-6fr" secondAttribute="bottom" id="mni-0L-roq"/>
+                <constraint firstItem="d5S-3x-6fr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rmy-Ao-iN2"/>
+                <constraint firstItem="PTF-eS-Tft" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s8V-Tk-UL8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close" width="12" height="12"/>
+    </resources>
+</document>

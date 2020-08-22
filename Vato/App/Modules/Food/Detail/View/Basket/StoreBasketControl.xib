@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="StoreBasketControl" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="YeK-1k-nzv">
+                    <rect key="frame" x="24" y="14.5" width="300.5" height="19.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Giỏ hàng:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bzw-et-C0L">
+                            <rect key="frame" x="0.0" y="0.0" width="71" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="2 món" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEH-ac-jz1">
+                            <rect key="frame" x="83" y="0.0" width="217.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Bzw-et-C0L" firstAttribute="leading" secondItem="YeK-1k-nzv" secondAttribute="leading" id="4lw-fB-iBa"/>
+                        <constraint firstAttribute="trailing" secondItem="uEH-ac-jz1" secondAttribute="trailing" priority="750" id="R57-hK-0r2"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="358000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgH-95-fS3">
+                    <rect key="frame" x="329.5" y="14.5" width="60.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HgH-95-fS3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AxI-WG-jgI"/>
+                <constraint firstAttribute="trailing" secondItem="HgH-95-fS3" secondAttribute="trailing" constant="24" id="Mvu-RB-BSb"/>
+                <constraint firstItem="YeK-1k-nzv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="dTk-Wp-IJH"/>
+                <constraint firstItem="YeK-1k-nzv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gaE-vf-9p2"/>
+                <constraint firstItem="HgH-95-fS3" firstAttribute="leading" secondItem="YeK-1k-nzv" secondAttribute="trailing" constant="5" id="hNH-gm-KSc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblNumber" destination="uEH-ac-jz1" id="4Zg-Oc-Ifj"/>
+                <outlet property="lblPrice" destination="HgH-95-fS3" id="TlT-9S-Qcl"/>
+                <outlet property="lblTitle" destination="Bzw-et-C0L" id="5Gf-WV-il5"/>
+            </connections>
+        </view>
+    </objects>
+</document>

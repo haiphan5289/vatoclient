@@ -1,0 +1,18 @@
+{
+    "values": [
+        {
+            "id": 1,
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/vato-2019-dev.appspot.com/o/ecom%2Fimages%2Fbanner%2FFood_Promotion_Banner_5.jpg?alt=media&token=c871c932-ab20-4b16-b597-341812c10fb8",
+            "url": "https://vato.vn"
+        },
+        {
+            "id": 2,
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/vato-2019-dev.appspot.com/o/ecom%2Fimages%2Fbanner%2FFood_Promotion_Banner_2.jpg?alt=media&token=002b7564-3615-4b2d-80da-037e5deb7691",
+            "url": "https://vato.vn"
+        },
+        {
+            "id": 3,
+            "imageURL": "https://firebasestorage.googleapis.com/v0/b/vato-2019-dev.appspot.com/o/ecom%2Fimages%2Fbanner%2FFood_Promotion_Banner_3.jpg?alt=media&token=85c0043a-418c-46f7-b3a2-17aa1cd76dc7",
+            "url": "https://vato.vn"
+        }]
+}

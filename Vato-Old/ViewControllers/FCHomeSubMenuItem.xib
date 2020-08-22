@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bTQ-3U-tFV" userLabel="UIView" customClass="FCHomeSubMenuItem">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sIf-Iv-Wd8" userLabel="menu1" customClass="FCView">
+                    <rect key="frame" x="27.5" y="0.0" width="55" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-g" translatesAutoresizingMaskIntoConstraints="NO" id="jxX-nq-vYf">
+                            <rect key="frame" x="17.5" y="17.5" width="20" height="20"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="jxX-nq-vYf" secondAttribute="height" multiplier="1:1" id="CWN-7N-ZQJ"/>
+                                <constraint firstAttribute="width" constant="20" id="IgI-Hp-qIE"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlr-u3-aR2" customClass="FCLabel">
+                            <rect key="frame" x="32.5" y="9.5" width="13" height="13"/>
+                            <color key="backgroundColor" red="1" green="0.2098784471" blue="0.10888974429999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="13" id="2eI-p5-9cb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="jxX-nq-vYf" firstAttribute="centerX" secondItem="sIf-Iv-Wd8" secondAttribute="centerX" id="0uT-Xe-U5C"/>
+                        <constraint firstItem="Wlr-u3-aR2" firstAttribute="width" secondItem="Wlr-u3-aR2" secondAttribute="height" multiplier="1:1" id="Lyu-60-ZyL"/>
+                        <constraint firstAttribute="width" secondItem="sIf-Iv-Wd8" secondAttribute="height" multiplier="1:1" id="M0m-o6-6fd"/>
+                        <constraint firstItem="Wlr-u3-aR2" firstAttribute="leading" secondItem="jxX-nq-vYf" secondAttribute="trailing" constant="-5" id="U8J-ps-Xeg"/>
+                        <constraint firstAttribute="width" constant="55" id="Z9g-KG-Q9X"/>
+                        <constraint firstItem="jxX-nq-vYf" firstAttribute="centerY" secondItem="sIf-Iv-Wd8" secondAttribute="centerY" id="cfu-XN-Y3H"/>
+                        <constraint firstItem="jxX-nq-vYf" firstAttribute="top" secondItem="Wlr-u3-aR2" secondAttribute="bottom" constant="-5" id="k9y-5i-WhR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gọi xe nhanh" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxF-Br-bOD" customClass="FCLabel">
+                    <rect key="frame" x="35" y="70" width="40.5" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isShadow" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="sIf-Iv-Wd8" firstAttribute="centerX" secondItem="bTQ-3U-tFV" secondAttribute="centerX" id="0hR-ib-TZJ"/>
+                <constraint firstItem="sIf-Iv-Wd8" firstAttribute="top" secondItem="bTQ-3U-tFV" secondAttribute="top" id="d7e-7z-zH5"/>
+                <constraint firstItem="kxF-Br-bOD" firstAttribute="centerX" secondItem="bTQ-3U-tFV" secondAttribute="centerX" id="dF0-TJ-XWA"/>
+                <constraint firstItem="kxF-Br-bOD" firstAttribute="top" secondItem="sIf-Iv-Wd8" secondAttribute="bottom" constant="15" id="kuE-J3-Q89"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="jxX-nq-vYf" id="p2v-kO-S9O"/>
+                <outlet property="label" destination="kxF-Br-bOD" id="8rW-MW-jWC"/>
+                <outlet property="lblBadge" destination="Wlr-u3-aR2" id="kAJ-ag-IJk"/>
+                <outletCollection property="gestureRecognizers" destination="B2K-ku-qfw" appends="YES" id="wcf-bc-bck"/>
+            </connections>
+            <point key="canvasLocation" x="-61" y="-96"/>
+        </view>
+        <tapGestureRecognizer id="B2K-ku-qfw">
+            <connections>
+                <action selector="clicked:" destination="bTQ-3U-tFV" id="4rP-Cs-nPf"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="phone-g" width="37" height="37"/>
+    </resources>
+</document>

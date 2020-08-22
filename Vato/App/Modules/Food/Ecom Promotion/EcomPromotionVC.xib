@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EcomPromotionVC" customModule="VATO" customModuleProvider="target">
+            <connections>
+                <outlet property="btnApply" destination="YHP-bp-SxN" id="bwp-o2-NnH"/>
+                <outlet property="containerView" destination="v3m-pf-7se" id="NRb-sh-4Cx"/>
+                <outlet property="textField" destination="3Gy-dj-qLw" id="7k5-tb-U3E"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rgy-5P-yVt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkz-ZF-IBa">
+                    <rect key="frame" x="0.0" y="44" width="414" height="68"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pn8-B2-H2z">
+                            <rect key="frame" x="16" y="16" width="382" height="36"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Z6-Xl-nCj">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="36"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_food_search_text" translatesAutoresizingMaskIntoConstraints="NO" id="Z6M-k5-1XU">
+                                            <rect key="frame" x="8" y="8" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="4F3-hK-hol"/>
+                                                <constraint firstAttribute="width" constant="20" id="kXc-P4-3g9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3Gy-dj-qLw">
+                                            <rect key="frame" x="36" y="1" width="249" height="34"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.75294117647058822" green="0.77647058823529413" blue="0.80000000000000004" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="3Gy-dj-qLw" firstAttribute="leading" secondItem="Z6M-k5-1XU" secondAttribute="trailing" constant="8" id="6wx-hw-KNY"/>
+                                        <constraint firstItem="3Gy-dj-qLw" firstAttribute="top" secondItem="5Z6-Xl-nCj" secondAttribute="top" constant="1" id="7P2-I5-fLM"/>
+                                        <constraint firstItem="Z6M-k5-1XU" firstAttribute="leading" secondItem="5Z6-Xl-nCj" secondAttribute="leading" constant="8" id="8ty-z5-AVo"/>
+                                        <constraint firstAttribute="trailing" secondItem="3Gy-dj-qLw" secondAttribute="trailing" constant="8" id="CNh-1g-X3n"/>
+                                        <constraint firstItem="Z6M-k5-1XU" firstAttribute="centerY" secondItem="5Z6-Xl-nCj" secondAttribute="centerY" id="MOp-iD-Nti"/>
+                                        <constraint firstAttribute="bottom" secondItem="3Gy-dj-qLw" secondAttribute="bottom" constant="1" id="agp-4j-fzx"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.75294117647058822" green="0.77647058823529413" blue="0.80000000000000004" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-bp-SxN">
+                                    <rect key="frame" x="301" y="0.0" width="81" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="Uc5-7w-d0A"/>
+                                        <constraint firstAttribute="width" constant="81" id="rJX-zO-UK8"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="18"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="pn8-B2-H2z" firstAttribute="centerY" secondItem="wkz-ZF-IBa" secondAttribute="centerY" id="V2r-n2-2SN"/>
+                        <constraint firstItem="pn8-B2-H2z" firstAttribute="leading" secondItem="wkz-ZF-IBa" secondAttribute="leading" constant="16" id="bD1-bw-Np0"/>
+                        <constraint firstAttribute="height" constant="68" id="dKi-yT-beq"/>
+                        <constraint firstAttribute="trailing" secondItem="pn8-B2-H2z" secondAttribute="trailing" constant="16" id="w94-3Y-uHw"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3m-pf-7se">
+                    <rect key="frame" x="0.0" y="112" width="414" height="784"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wkz-ZF-IBa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3iD-Sf-Ypw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="v3m-pf-7se" secondAttribute="trailing" id="6Uf-vZ-K4t"/>
+                <constraint firstItem="v3m-pf-7se" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8T9-87-tzj"/>
+                <constraint firstItem="v3m-pf-7se" firstAttribute="top" secondItem="wkz-ZF-IBa" secondAttribute="bottom" id="CdC-9F-tvT"/>
+                <constraint firstAttribute="bottom" secondItem="v3m-pf-7se" secondAttribute="bottom" id="D00-r4-hw0"/>
+                <constraint firstAttribute="trailing" secondItem="wkz-ZF-IBa" secondAttribute="trailing" id="o7h-vT-0uK"/>
+                <constraint firstItem="wkz-ZF-IBa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qtL-lk-CBs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="77" y="-167"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_food_search_text" width="24" height="24"/>
+    </resources>
+</document>

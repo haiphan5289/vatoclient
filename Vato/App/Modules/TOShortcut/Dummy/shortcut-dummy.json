@@ -1,0 +1,56 @@
+
+{
+    "data":
+    [
+        {
+            "id": 1,
+            "name": "Lịch sử giao dịch tiền",
+            "description": "Nạp tiền, rút tiền tài khoản VATOPay",
+            "cellType": 0,
+            "type": 0
+        },
+        {
+            "id": 2,
+            "name": "Lịch sử hoạt động",
+            "description": "Chuyến đi, đơn hàng food, giao hàng, mua vé xe,…",
+            "cellType": 0,
+            "type": 1
+        },
+        {
+            "id": 3,
+            "name": "Yêu cầu hỗ trợ nhanh",
+            "description": "Vấn đề về lái xe",
+            "cellType": 0,
+            "type": 2
+        },
+        {
+            "id": 4,
+            "name": "S.O.S",
+            "description": "Gọi tổng đài",
+            "cellType": 0,
+            "type": 3
+        },
+        {
+            "id": 6,
+            "name": "Giới thiệu bạn bè",
+            "description": "Giới thiệu bạn bè",
+            "cellType": 0,
+            "type": 5
+        },
+        {
+            "id": 5,
+            "name": "Đăng ký làm Merchant",
+            "description": "Đăng ký cửa hàng, đại lý",
+            "cellType": 0,
+            "type": 4
+        },
+        {
+            "id": 9,
+            "name": "Nạp tiền vào VATOPay",
+            "description": "Nạp tiền vào VATOPay cho Khách hàng, Lái xe",
+            "cellType": 0,
+            "type": 8
+        }
+    ],
+    "status": 200
+}

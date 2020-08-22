@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmBookingChangeMethodVC">
+            <connections>
+                <outlet property="btnCash" destination="Mb8-4r-U6K" id="aNW-p1-nKA"/>
+                <outlet property="btnClose" destination="Koy-CA-zeT" id="2IB-BO-g3B"/>
+                <outlet property="btnInputMoney" destination="9gV-SQ-bTR" id="0iW-Rj-770"/>
+                <outlet property="containerView" destination="GGd-of-NqB" id="m9W-Gf-vJp"/>
+                <outlet property="descriptionLabel" destination="BMV-6b-5oz" id="H6Q-R8-Meq"/>
+                <outlet property="stackView" destination="hyl-Jq-SkZ" id="WrE-6W-AfW"/>
+                <outlet property="titleLabel" destination="TLz-oS-sG6" id="6M6-Zi-8M8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jYO-eb-xeE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGd-of-NqB">
+                    <rect key="frame" x="16" y="201" width="343" height="265"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không đủ số dư VATOPay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLz-oS-sG6">
+                            <rect key="frame" x="15" y="23" width="269" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koy-CA-zeT">
+                            <rect key="frame" x="284" y="4" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="eBb-Qf-4gh"/>
+                                <constraint firstAttribute="width" constant="44" id="etL-oj-OOm"/>
+                            </constraints>
+                            <state key="normal" image="ic_close"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn không đủ số dư trong VATOPay để thanh toán cho chuyến đi này, vui lòng nạp thêm hoặc chuyển sang thanh toán bằng tiền mặt." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMV-6b-5oz">
+                            <rect key="frame" x="15" y="57.5" width="313" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hyl-Jq-SkZ">
+                            <rect key="frame" x="15" y="121" width="313" height="104"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gV-SQ-bTR">
+                                    <rect key="frame" x="0.0" y="0.0" width="313" height="48"/>
+                                    <color key="backgroundColor" red="0.81176470590000005" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="CSI-ph-OTt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="Nạp VATOPay"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.75686274509803919" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-4r-U6K">
+                                    <rect key="frame" x="0.0" y="56" width="313" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="ijx-7w-SvP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                    <state key="normal" title="Thanh toán tiền mặt">
+                                        <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.75686274509999996" green="0.78039215689999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hyl-Jq-SkZ" secondAttribute="bottom" priority="750" constant="40" id="15L-qp-xBw"/>
+                        <constraint firstAttribute="trailing" secondItem="BMV-6b-5oz" secondAttribute="trailing" constant="15" id="2eE-4E-Nvy"/>
+                        <constraint firstItem="hyl-Jq-SkZ" firstAttribute="top" secondItem="BMV-6b-5oz" secondAttribute="bottom" constant="13" id="4KO-DH-JU7"/>
+                        <constraint firstAttribute="trailing" secondItem="Koy-CA-zeT" secondAttribute="trailing" constant="15" id="G4m-UK-2ln"/>
+                        <constraint firstItem="TLz-oS-sG6" firstAttribute="leading" secondItem="GGd-of-NqB" secondAttribute="leading" constant="15" id="L6p-2R-ze6"/>
+                        <constraint firstItem="BMV-6b-5oz" firstAttribute="top" secondItem="TLz-oS-sG6" secondAttribute="bottom" constant="13" id="LdQ-bQ-Bbh"/>
+                        <constraint firstItem="Koy-CA-zeT" firstAttribute="leading" secondItem="TLz-oS-sG6" secondAttribute="trailing" id="MmR-Cq-s7n"/>
+                        <constraint firstItem="TLz-oS-sG6" firstAttribute="top" secondItem="GGd-of-NqB" secondAttribute="top" constant="23" id="OYc-mC-qV5"/>
+                        <constraint firstItem="Koy-CA-zeT" firstAttribute="top" secondItem="GGd-of-NqB" secondAttribute="top" constant="4" id="REA-vc-jXo"/>
+                        <constraint firstItem="hyl-Jq-SkZ" firstAttribute="trailing" secondItem="BMV-6b-5oz" secondAttribute="trailing" id="b4i-Uh-4CU"/>
+                        <constraint firstItem="hyl-Jq-SkZ" firstAttribute="leading" secondItem="BMV-6b-5oz" secondAttribute="leading" id="cXM-w7-y9M"/>
+                        <constraint firstItem="BMV-6b-5oz" firstAttribute="leading" secondItem="TLz-oS-sG6" secondAttribute="leading" id="jYb-dd-TSL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GGd-of-NqB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hp3-2g-vaB"/>
+                <constraint firstItem="GGd-of-NqB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="jyK-S1-FQ9"/>
+                <constraint firstAttribute="trailing" secondItem="GGd-of-NqB" secondAttribute="trailing" constant="16" id="qSF-sQ-hdl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_close" width="12" height="12"/>
+    </resources>
+</document>

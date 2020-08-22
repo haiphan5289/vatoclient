@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpressQRCodeVC" customModule="VATO" customModuleProvider="target">
+            <connections>
+                <outlet property="qrCodeImage" destination="5JY-er-8NN" id="WtP-wH-6xB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5JY-er-8NN">
+                    <rect key="frame" x="112" y="134" width="190" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="fZb-2d-pnX"/>
+                        <constraint firstAttribute="width" constant="190" id="xvO-Of-mLV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VB0012911NT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-Ba-Zjj">
+                    <rect key="frame" x="148.5" y="340" width="117.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sử dụng mã vạch khi gửi hàng hoá tại điểm sẽ giúp bạn giao dịch nhanh hơn và đơn giản hơn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5j-sP-jim">
+                    <rect key="frame" x="49" y="393.5" width="341" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sử dụng mã vạch khi gửi hàng hoá tại điểm sẽ giúp bạn giao dịch nhanh hơn và đơn giản hơn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDU-Pd-kOm">
+                    <rect key="frame" x="49" y="445.5" width="341" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="znG-eo-jr3">
+                    <rect key="frame" x="16" y="513.5" width="382" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzE-KX-ODb">
+                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="48"/>
+                            <state key="normal" title="Sao chép">
+                                <color key="titleColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.75294117647058822" green="0.77647058823529413" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-Dx-R8P">
+                            <rect key="frame" x="199.5" y="0.0" width="182.5" height="48"/>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.32156862749999998" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Chia sẻ">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="4sJ-Pp-qF4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_promotion_check" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-YV-0IS">
+                    <rect key="frame" x="20" y="398.5" width="13" height="11"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_promotion_check" translatesAutoresizingMaskIntoConstraints="NO" id="L5d-ed-zFW">
+                    <rect key="frame" x="20" y="450.5" width="13" height="11"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5JY-er-8NN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8eH-uV-gdu"/>
+                <constraint firstItem="znG-eo-jr3" firstAttribute="top" secondItem="dDU-Pd-kOm" secondAttribute="bottom" constant="32" id="DUz-fk-9Hz"/>
+                <constraint firstItem="dDU-Pd-kOm" firstAttribute="leading" secondItem="x5j-sP-jim" secondAttribute="leading" id="HQd-Yr-dLN"/>
+                <constraint firstItem="dDU-Pd-kOm" firstAttribute="trailing" secondItem="x5j-sP-jim" secondAttribute="trailing" id="IJX-9S-Gba"/>
+                <constraint firstItem="dDU-Pd-kOm" firstAttribute="top" secondItem="x5j-sP-jim" secondAttribute="bottom" constant="16" id="LUh-OS-AFK"/>
+                <constraint firstItem="x5j-sP-jim" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="49" id="QJa-hc-pOJ"/>
+                <constraint firstItem="dDU-Pd-kOm" firstAttribute="leading" secondItem="L5d-ed-zFW" secondAttribute="trailing" constant="16" id="RTm-8C-mJX"/>
+                <constraint firstItem="ACO-Ba-Zjj" firstAttribute="top" secondItem="5JY-er-8NN" secondAttribute="bottom" constant="16" id="XIl-nk-23x"/>
+                <constraint firstItem="5JY-er-8NN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="ZjE-sl-oWc"/>
+                <constraint firstItem="znG-eo-jr3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cDx-bM-xbc"/>
+                <constraint firstItem="L5d-ed-zFW" firstAttribute="top" secondItem="dDU-Pd-kOm" secondAttribute="top" constant="5" id="efq-eh-BsM"/>
+                <constraint firstItem="x5j-sP-jim" firstAttribute="top" secondItem="ACO-Ba-Zjj" secondAttribute="bottom" constant="32" id="fD4-2c-NUa"/>
+                <constraint firstItem="x5j-sP-jim" firstAttribute="leading" secondItem="XPg-YV-0IS" secondAttribute="trailing" constant="16" id="kvL-K3-h6q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="znG-eo-jr3" secondAttribute="trailing" constant="16" id="mXN-Fy-Uav"/>
+                <constraint firstItem="ACO-Ba-Zjj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wyQ-g6-kK4"/>
+                <constraint firstItem="x5j-sP-jim" firstAttribute="top" secondItem="XPg-YV-0IS" secondAttribute="top" constant="-5" id="xpN-Cz-bgV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x5j-sP-jim" secondAttribute="trailing" constant="24" id="zBk-IX-Hix"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="44.927536231884062" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_promotion_check" width="13" height="11"/>
+    </resources>
+</document>

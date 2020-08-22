@@ -1,0 +1,123 @@
+
+/* Class = "UILabel"; text = "-1"; ObjectID = "0rA-lU-Ym2"; */
+"0rA-lU-Ym2.text" = "-1";
+
+/* Class = "UILabel"; text = "-10"; ObjectID = "0tW-go-TNx"; */
+"0tW-go-TNx.text" = "-10";
+
+/* Class = "UILabel"; text = "Khách huỷ vé sát giờ"; ObjectID = "2s4-99-9QL"; */
+"2s4-99-9QL.text" = "Khách huỷ vé sát giờ";
+
+/* Class = "UILabel"; text = "Trung bình\n31 - 70đ"; ObjectID = "3kU-99-FgT"; */
+"3kU-99-FgT.text" = "Trung bình\n31 - 70đ";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "4fx-jz-8Fp"; */
+"4fx-jz-8Fp.text" = "+1";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "7ed-mB-zC9"; */
+"7ed-mB-zC9.text" = "100";
+
+/* Class = "UILabel"; text = "- Mua dịch vụ đảm bảo trên ứng dụng (Giao hàng, Gọi đồ ăn, COD, Vé FUTA Bus Lines,…)"; ObjectID = "HRj-Tp-yiR"; */
+"HRj-Tp-yiR.text" = "- Mua dịch vụ đảm bảo trên ứng dụng (Giao hàng, Gọi đồ ăn, COD, Vé FUTA Bus Lines,…)";
+
+/* Class = "UILabel"; text = "Địa chỉ yêu thích"; ObjectID = "Hb0-p2-v0v"; */
+"Hb0-p2-v0v.text" = "Địa chỉ yêu thích";
+
+/* Class = "UILabel"; text = "-10"; ObjectID = "INM-sV-s2d"; */
+"INM-sV-s2d.text" = "-10";
+
+/* Class = "UILabel"; text = "Xuyên tạc, nói xấu trên kênh mạng xã hội"; ObjectID = "IhZ-fn-4FR"; */
+"IhZ-fn-4FR.text" = "Xuyên tạc, nói xấu trên kênh mạng xã hội";
+
+/* Class = "UILabel"; text = "Điểm"; ObjectID = "J29-vG-ibh"; */
+"J29-vG-ibh.text" = "Điểm";
+
+/* Class = "UILabel"; text = "Tuyệt vời"; ObjectID = "KYi-fe-vwf"; */
+"KYi-fe-vwf.text" = "Tuyệt vời";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "Lae-aU-MSi"; */
+"Lae-aU-MSi.text" = "+1";
+
+/* Class = "UILabel"; text = "Giao hàng thất bại"; ObjectID = "NIg-Bz-VZz"; */
+"NIg-Bz-VZz.text" = "Giao hàng thất bại";
+
+/* Class = "UILabel"; text = "Phản hồi dịch vụ, báo cáo gian lận"; ObjectID = "NKS-uQ-T2f"; */
+"NKS-uQ-T2f.text" = "Phản hồi dịch vụ, báo cáo gian lận";
+
+/* Class = "UILabel"; text = "Cách nhận điểm tín nhiệm"; ObjectID = "Ojh-DC-int"; */
+"Ojh-DC-int.text" = "Cách nhận điểm tín nhiệm";
+
+/* Class = "UILabel"; text = "-1"; ObjectID = "Q67-4Y-q7p"; */
+"Q67-4Y-q7p.text" = "-1";
+
+/* Class = "UILabel"; text = "Nội dung"; ObjectID = "Qtc-3A-jt0"; */
+"Qtc-3A-jt0.text" = "Nội dung";
+
+/* Class = "UILabel"; text = "Khách hàng đe doạ lái xe đối tác"; ObjectID = "Rh7-Ib-rHP"; */
+"Rh7-Ib-rHP.text" = "Khách hàng đe doạ lái xe đối tác";
+
+/* Class = "UILabel"; text = "Hack, tấn công hệ thống"; ObjectID = "WMd-iZ-vev"; */
+"WMd-iZ-vev.text" = "Hack, tấn công hệ thống";
+
+/* Class = "UILabel"; text = "Liên kết thanh toán VISA/ Master"; ObjectID = "XJw-0n-y15"; */
+"XJw-0n-y15.text" = "Liên kết thanh toán VISA/ Master";
+
+/* Class = "UILabel"; text = "Điểm"; ObjectID = "YGq-PB-u0q"; */
+"YGq-PB-u0q.text" = "Điểm";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "Zev-WY-DLR"; */
+"Zev-WY-DLR.text" = "+1";
+
+/* Class = "UILabel"; text = "- Nhận chuyến từ tài xế"; ObjectID = "auD-AM-t9i"; */
+"auD-AM-t9i.text" = "- Nhận chuyến từ tài xế";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "b1d-oc-StP"; */
+"b1d-oc-StP.text" = "+1";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "bNK-2c-Zce"; */
+"bNK-2c-Zce.text" = "+1";
+
+/* Class = "UILabel"; text = "Liên kết thẻ ngân hàng"; ObjectID = "bXS-wz-Qza"; */
+"bXS-wz-Qza.text" = "Liên kết thẻ ngân hàng";
+
+/* Class = "UILabel"; text = "Tần suất sử dụng ứng dụng"; ObjectID = "dOl-Dq-Ohu"; */
+"dOl-Dq-Ohu.text" = "Tần suất sử dụng ứng dụng";
+
+/* Class = "UILabel"; text = "Tốt\n71 - 100đ"; ObjectID = "fRv-T5-5bu"; */
+"fRv-T5-5bu.text" = "Tốt\n71 - 100đ";
+
+/* Class = "UILabel"; text = "Huỷ chuyến, huỷ đơn hàng"; ObjectID = "hbt-hO-Ts3"; */
+"hbt-hO-Ts3.text" = "Huỷ chuyến, huỷ đơn hàng";
+
+/* Class = "UILabel"; text = "Kém\n0-30đ"; ObjectID = "hk2-UX-jZX"; */
+"hk2-UX-jZX.text" = "Kém\n0-30đ";
+
+/* Class = "UILabel"; text = "Sử dụng ví VATOPay"; ObjectID = "jeS-5O-9Se"; */
+"jeS-5O-9Se.text" = "Sử dụng tài khoản VATOPay";
+
+/* Class = "UILabel"; text = "- Tích điểm đổi quà từ các đối tác chiến lược VATO"; ObjectID = "jx5-yc-KKv"; */
+"jx5-yc-KKv.text" = "- Tích điểm đổi quà từ các đối tác chiến lược VATO";
+
+/* Class = "UILabel"; text = "-1"; ObjectID = "m11-qV-ARI"; */
+"m11-qV-ARI.text" = "-1";
+
+/* Class = "UILabel"; text = "Bom hàng, phá dịch vụ"; ObjectID = "nMa-Qd-mXT"; */
+"nMa-Qd-mXT.text" = "Bom hàng, phá dịch vụ";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "ttc-Hg-2UW"; */
+"ttc-Hg-2UW.text" = "+1";
+
+/* Class = "UILabel"; text = "-99"; ObjectID = "umJ-Vv-RKu"; */
+"umJ-Vv-RKu.text" = "-99";
+
+/* Class = "UILabel"; text = "Ngày sinh nhật/ CMND"; ObjectID = "vf9-aX-8ci"; */
+"vf9-aX-8ci.text" = "Ngày sinh nhật/ CMND";
+
+/* Class = "UILabel"; text = "Hãy duy trì trải nghiệm này nhé!"; ObjectID = "xOL-Bc-LU3"; */
+"xOL-Bc-LU3.text" = "Hãy duy trì trải nghiệm này nhé!";
+
+/* Class = "UILabel"; text = "-5"; ObjectID = "xmt-kl-OxO"; */
+"xmt-kl-OxO.text" = "-5";
+
+/* Class = "UILabel"; text = "+1"; ObjectID = "yVo-Ql-GkS"; */
+"yVo-Ql-GkS.text" = "+1";

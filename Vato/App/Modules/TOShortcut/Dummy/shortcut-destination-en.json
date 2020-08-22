@@ -1,0 +1,21 @@
+
+{
+    "data":
+    [
+        {
+            "id": 4,
+            "name": "S.O.S",
+            "description": "Call support",
+            "cellType": 0,
+            "type": 3
+        },
+        {
+            "id": 10,
+            "name": "Add Destination",
+            "description": "You can add more destination",
+            "cellType": 0,
+            "type": 9
+        }
+    ],
+    "status": 200
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IGM-Tp-QsI" customClass="HistoryExpressView" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuP-6n-Z3K">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="305"/>
+                    <color key="backgroundColor" red="0.75294117650000003" green="0.77647058820000003" blue="0.80000000000000004" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:10 29/11/2018 • 29IT0PA29IT0PA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7w-xd-ryb">
+                    <rect key="frame" x="16" y="16" width="382" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giao hàng siêu tốc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieH-bG-HKF">
+                    <rect key="frame" x="16" y="274" width="382" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKC-S6-964">
+                    <rect key="frame" x="0.0" y="257.5" width="414" height="0.5"/>
+                    <color key="backgroundColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="dX6-nS-Kks"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YPH-Ek-CNW">
+                    <rect key="frame" x="16" y="39" width="382" height="210.5"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EKC-S6-964" firstAttribute="leading" secondItem="IGM-Tp-QsI" secondAttribute="leading" id="2ji-28-1Wg"/>
+                <constraint firstItem="RuP-6n-Z3K" firstAttribute="leading" secondItem="IGM-Tp-QsI" secondAttribute="leading" id="2vu-2U-zvt"/>
+                <constraint firstItem="EKC-S6-964" firstAttribute="top" secondItem="YPH-Ek-CNW" secondAttribute="bottom" constant="8" id="D3F-y1-4Qz"/>
+                <constraint firstItem="e7w-xd-ryb" firstAttribute="leading" secondItem="IGM-Tp-QsI" secondAttribute="leading" constant="16" id="DU7-ry-nEm"/>
+                <constraint firstAttribute="bottom" secondItem="RuP-6n-Z3K" secondAttribute="bottom" id="IjP-OW-GxI"/>
+                <constraint firstItem="RuP-6n-Z3K" firstAttribute="top" secondItem="IGM-Tp-QsI" secondAttribute="top" id="LuM-q2-HtD"/>
+                <constraint firstAttribute="trailing" secondItem="ieH-bG-HKF" secondAttribute="trailing" constant="16" id="Mtg-sr-kwE"/>
+                <constraint firstAttribute="bottom" secondItem="ieH-bG-HKF" secondAttribute="bottom" constant="16" id="RDb-XO-HDO"/>
+                <constraint firstItem="YPH-Ek-CNW" firstAttribute="leading" secondItem="IGM-Tp-QsI" secondAttribute="leading" constant="16" id="Yol-mH-OTz"/>
+                <constraint firstAttribute="trailing" secondItem="EKC-S6-964" secondAttribute="trailing" id="hXq-SI-whU"/>
+                <constraint firstItem="YPH-Ek-CNW" firstAttribute="top" secondItem="e7w-xd-ryb" secondAttribute="bottom" constant="8" id="k5R-5Z-Sy5"/>
+                <constraint firstItem="ieH-bG-HKF" firstAttribute="top" secondItem="EKC-S6-964" secondAttribute="bottom" constant="16" id="kl0-eI-gbs"/>
+                <constraint firstItem="ieH-bG-HKF" firstAttribute="leading" secondItem="IGM-Tp-QsI" secondAttribute="leading" constant="16" id="kxe-sN-hwg"/>
+                <constraint firstItem="e7w-xd-ryb" firstAttribute="top" secondItem="IGM-Tp-QsI" secondAttribute="top" constant="16" id="p9J-ck-rCt"/>
+                <constraint firstAttribute="trailing" secondItem="RuP-6n-Z3K" secondAttribute="trailing" id="q0s-65-6Xz"/>
+                <constraint firstAttribute="trailing" secondItem="e7w-xd-ryb" secondAttribute="trailing" constant="16" id="u2b-ih-N25"/>
+                <constraint firstAttribute="trailing" secondItem="YPH-Ek-CNW" secondAttribute="trailing" constant="16" id="ubC-Vx-gJF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblEnd" destination="ieH-bG-HKF" id="glc-4a-r4N"/>
+                <outlet property="lblTitle" destination="e7w-xd-ryb" id="DTP-MY-QHS"/>
+                <outlet property="stackView" destination="YPH-Ek-CNW" id="RpS-Sa-mrs"/>
+            </connections>
+            <point key="canvasLocation" x="262.31884057971018" y="-0.33482142857142855"/>
+        </view>
+    </objects>
+</document>

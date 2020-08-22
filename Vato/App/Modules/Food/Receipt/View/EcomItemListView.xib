@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="EcomItemListView" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ki2-Ww-tFY">
+                    <rect key="frame" x="16" y="12" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="78M-gK-brB"/>
+                        <constraint firstAttribute="width" constant="48" id="Pvk-do-FXk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhN-fa-67G">
+                    <rect key="frame" x="76" y="16" width="276" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arg-2i-RnI">
+                    <rect key="frame" x="362" y="16" width="36" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.3803921569" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fQK-2r-6bw">
+                    <rect key="frame" x="76" y="38" width="322" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xu-wJ-rYJ">
+                            <rect key="frame" x="0.0" y="0.0" width="322" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT3-PR-7sc">
+                            <rect key="frame" x="0.0" y="26" width="322" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LhN-fa-67G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="3gb-nJ-VJt"/>
+                <constraint firstItem="ki2-Ww-tFY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="5n2-JJ-Q3b"/>
+                <constraint firstItem="ki2-Ww-tFY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="ER2-HV-aVk"/>
+                <constraint firstItem="fQK-2r-6bw" firstAttribute="leading" secondItem="LhN-fa-67G" secondAttribute="leading" id="FhS-6R-gPh"/>
+                <constraint firstAttribute="bottom" secondItem="fQK-2r-6bw" secondAttribute="bottom" priority="750" constant="14" id="Kwo-PC-6xa"/>
+                <constraint firstItem="fQK-2r-6bw" firstAttribute="trailing" secondItem="Arg-2i-RnI" secondAttribute="trailing" id="cW7-HL-vGj"/>
+                <constraint firstItem="Arg-2i-RnI" firstAttribute="leading" secondItem="LhN-fa-67G" secondAttribute="trailing" constant="10" id="f5C-sG-cwD"/>
+                <constraint firstAttribute="trailing" secondItem="Arg-2i-RnI" secondAttribute="trailing" constant="16" id="ged-LG-c2N"/>
+                <constraint firstItem="LhN-fa-67G" firstAttribute="leading" secondItem="ki2-Ww-tFY" secondAttribute="trailing" constant="12" id="oUI-0l-7JE"/>
+                <constraint firstItem="fQK-2r-6bw" firstAttribute="top" secondItem="LhN-fa-67G" secondAttribute="bottom" constant="4" id="t4H-vJ-TBV"/>
+                <constraint firstItem="Arg-2i-RnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="yoY-Oq-Se8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="ki2-Ww-tFY" id="Iwv-SI-9uk"/>
+                <outlet property="lblNote" destination="6xu-wJ-rYJ" id="5Ag-az-azI"/>
+                <outlet property="lblNumber" destination="Arg-2i-RnI" id="aLV-v2-dla"/>
+                <outlet property="lblPrice" destination="JT3-PR-7sc" id="qdC-v5-3ph"/>
+                <outlet property="lblTitle" destination="LhN-fa-67G" id="Iui-1Q-daW"/>
+            </connections>
+            <point key="canvasLocation" x="474" y="-51"/>
+        </view>
+    </objects>
+</document>

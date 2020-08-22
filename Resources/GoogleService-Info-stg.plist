@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>639535783968-0f8r3enkk7beulm4h959on9ncruchmvr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.639535783968-0f8r3enkk7beulm4h959on9ncruchmvr</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>639535783968-576vko7gpqj3skom4muf09oljcdelo4l.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCl2ZuHKk41TcLv5n9_5coBKDttr6PCo-Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>639535783968</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vato.client-staging</string>
+	<key>PROJECT_ID</key>
+	<string>facecar-29ae7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>facecar-29ae7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:639535783968:ios:9c2c3272dff1b7a6c81c45</string>
+	<key>DATABASE_URL</key>
+	<string>https://facecar-29ae7-production.firebaseio.com</string>
+</dict>
+</plist>

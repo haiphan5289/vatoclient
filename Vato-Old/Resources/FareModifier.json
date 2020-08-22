@@ -1,0 +1,32 @@
+ [ {
+  "active" : true,
+  "additionAmount" : 7000,
+  "additionMax" : 100000,
+  "additionMin" : 5000,
+  "additionRatio" : 0.3,
+  "clientDelta" : 3000,
+  "clientMax" : 20000,
+  "clientMin" : 10000,
+  "clientRatio" : 0.7,
+  "driverActiveAmount" : 50000,
+  "driverMax" : 60000,
+  "driverMin" : 10000,
+  "driverRatio" : 0.1,
+  "id" : 2
+  }, {
+  "active" : true,
+  "additionAmount" : 7000,
+  "additionMax" : 30000,
+  "additionMin" : 5000,
+  "additionRatio" : 0.3,
+  "clientDelta" : 3000,
+  "clientMax" : 10000,
+  "clientMin" : 5000,
+  "clientRatio" : 0.7,
+  "driverActiveAmount" : 10000,
+  "driverMax" : 30000,
+  "driverMin" : 10000,
+  "driverRatio" : 0.1,
+  "id" : 1
+  } ]
+

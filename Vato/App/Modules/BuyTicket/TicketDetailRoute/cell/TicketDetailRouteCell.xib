@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TicketDetailRouteCell" customModule="VATO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_origin" translatesAutoresizingMaskIntoConstraints="NO" id="zyX-BI-o29">
+                        <rect key="frame" x="16" y="0.0" width="16" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ZIp-r6-9Iz"/>
+                            <constraint firstAttribute="width" constant="16" id="dKy-Su-zga"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24:59" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1w-i9-OKl">
+                        <rect key="frame" x="40" y="0.0" width="70" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="W6O-JC-HLI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BX Miền Tây" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHE-rJ-RTL">
+                        <rect key="frame" x="120" y="0.0" width="190" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="TL7-DN-56Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.38039215686274508" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VP BX Miền Tây: 395 Kinh Dương Vương, P. An Lạc, Q. Bình Tân, TP. HCM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llt-U8-XBi">
+                        <rect key="frame" x="120" y="21" width="171" height="45"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_img_dotnet" translatesAutoresizingMaskIntoConstraints="NO" id="TJQ-EX-0VK">
+                        <rect key="frame" x="23" y="16" width="2" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="dsw-OX-Vwn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="llt-U8-XBi" firstAttribute="leading" secondItem="HHE-rJ-RTL" secondAttribute="leading" id="02O-QK-TdF"/>
+                    <constraint firstItem="a1w-i9-OKl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2ON-dO-tec"/>
+                    <constraint firstItem="a1w-i9-OKl" firstAttribute="leading" secondItem="zyX-BI-o29" secondAttribute="trailing" constant="8" id="72u-m0-xih"/>
+                    <constraint firstItem="TJQ-EX-0VK" firstAttribute="top" secondItem="zyX-BI-o29" secondAttribute="bottom" id="DLt-Mn-stl"/>
+                    <constraint firstItem="llt-U8-XBi" firstAttribute="top" secondItem="HHE-rJ-RTL" secondAttribute="bottom" constant="3" id="OZP-2j-Eww"/>
+                    <constraint firstItem="HHE-rJ-RTL" firstAttribute="leading" secondItem="a1w-i9-OKl" secondAttribute="trailing" constant="10" id="PN1-Us-rTK"/>
+                    <constraint firstItem="HHE-rJ-RTL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Pk6-LD-G7I"/>
+                    <constraint firstAttribute="trailing" secondItem="HHE-rJ-RTL" secondAttribute="trailing" constant="10" id="RfV-t3-gQy"/>
+                    <constraint firstItem="zyX-BI-o29" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="TH7-IR-6bz"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="llt-U8-XBi" secondAttribute="trailing" constant="10" id="ZFr-SQ-PhJ"/>
+                    <constraint firstAttribute="bottom" secondItem="llt-U8-XBi" secondAttribute="bottom" constant="24" id="ZZP-lW-tt8"/>
+                    <constraint firstItem="zyX-BI-o29" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cnM-Pm-0rK"/>
+                    <constraint firstItem="TJQ-EX-0VK" firstAttribute="centerX" secondItem="zyX-BI-o29" secondAttribute="centerX" id="oMc-Ph-C9o"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgAddress" destination="zyX-BI-o29" id="zvz-RB-3zW"/>
+                <outlet property="imgDot" destination="TJQ-EX-0VK" id="i4b-Qh-UvD"/>
+                <outlet property="lbAddress" destination="llt-U8-XBi" id="133-QS-LUu"/>
+                <outlet property="lbName" destination="HHE-rJ-RTL" id="SA0-NF-jNJ"/>
+                <outlet property="lbTime" destination="a1w-i9-OKl" id="l6P-oi-0GX"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="129.53523238380811"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_img_dotnet" width="2" height="66"/>
+        <image name="ic_origin" width="16" height="16"/>
+    </resources>
+</document>

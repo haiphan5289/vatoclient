@@ -1,0 +1,285 @@
+//
+//  Prefix.pch
+//  FaceCar
+//
+//  Created by Vu Dang on 5/30/16.
+//  Copyright © 2016 Vu Dang. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "FirebaseHelper.h"
+#import "FacebookHelper.h"
+#import "NavigatorHelper.h"
+#import "UIAlertView+Blocks.h"
+#import "UIActionSheet+Blocks.h"
+#import "IndicatorUtils.h"
+#import "NSObject+Helper.h"
+#import "UIAlertController+Blocks.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
+
+#import "FCView.h"
+#import "FCButton.h"
+#import "FCLabel.h"
+#import "FCImageView.h"
+#import "FCTextField.h"
+
+#import "FCRouter.h"
+#import "FCGGMapView.h"
+#import "FCNotifyBannerView.h"
+
+#import "FCViewController.h"
+#import "FCResponse.h"
+#import "Enums.h"
+#import "Apis.h"
+#import "FCBooking.h"
+#import "FCDriverSearch.h"
+
+#if DEV
+#import "VATO_DEV-Swift.h"
+#elif STG
+#import "VATO_Staging-Swift.h"
+#else
+#import "VATO-Swift.h"
+#endif
+
+#endif
+
+#define LOG 1
+#define MAP_ZOOM 13
+#define NUM_OF_DRIVER_GROUP 10
+#define VN_PHONE_CODE 84
+#define limitdays 2505600000 // 29days
+#define TIMEOUT_SENDING 30
+// for apply
+#define PHONE_TEST @"01234567890"
+#define PASS_TEST @"123456"
+
+#define APP_URL_SCHEME @"vivuclientscheme"
+#define APP_BUNDLE_ID @"com.client.facecar";
+#define APP_STORE_ID @"1126633800";
+
+#define PHONE_CENTER @"19006667"
+#define EMPTY @""
+
+#define ZALOPAY_APPID 360
+#define ZALO_APP_STORE @"https://itunes.apple.com/us/app/zalo-pay-thanh-toan-trong/id1112407590?mt=8"
+
+// Keys
+#define GOOGLE_MAPS_KEY @"AIzaSyCl2ZuHKk41TcLv5n9_5coBKDttr6PCo-Q"
+#define APP_STORE @"https://itunes.apple.com/vn/app/facecar/id1126633800?mt=8"
+
+// Web
+#define PRIVACY_URL @"https://vato.vn/quy-che-hoat-dong-va-dieu-khoan/"
+#define VATO_URL @"https://vato.vn"
+
+// Color
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define LIGHT_GRAY UIColorFromRGB(0xD0D0D0)
+#define GRAY UIColorFromRGB(0x9E9E9E)
+#define LIGHT_BLUE UIColorFromRGB(0xB7E3E6)
+#define CLEAR_COLOR UIColorFromRGB(0x00000000)
+#define DARK_GREEN UIColorFromRGB(0x43A047)
+#define LIGHT_ORANGE UIColorFromRGB(0xFFAB40)
+#define WHITE_ALPHA UIColorFromRGB(0x9BFFFFFF)
+
+#define ORANGE_COLOR        UIColorFromRGB(0xEF5222)
+#define DARK_GREEN_COLOR    UIColorFromRGB(0x00613D)
+
+
+// Notification key
+#define NOTIFICATION_FINISHED_TRIP @"kFinishedTripNotification"
+#define NOTIFICATION_RESUME_APP @"kResumeApp"
+#define NOTIFICATION_ENTER_BACKGROUND @"kAppEnterBackground"
+#define NOTIFICATION_APP_WILL_TERMINAL @"kAppWillTerminal"
+#define NOTIFICATION_RESET_PRICE_VIEW @"kResetPriceViewOnMap"
+#define NOTIFICATION_LOAD_PRICE_VIEW @"kLoadPriceViewOnMap"
+#define NOTIFICATION_LOAD_GIFT_INFO_FOR_SERIVCE @"kReloadGiftForService"
+#define NOTIFICATION_ZALO_SUCCESS @"kZaloPaySuccess"
+#define NOTIFICATION_LOCAITON_UPDATEED @"kLocationUpdated"
+#define NOTIFICATION_NETWOTK_CONNECTED @"kNotificationNetworkConnected"
+#define NOTIFICATION_NETWORK_DISCONNECTED @"kNotificationNetworkDisConnected"
+#define NOTIFICATION_TRANSFER_MONEY_COMPLETED @"kTransferMoneySuccess"
+#define NOTIFICATION_CREATE_PIN_COMPLETED @"kCreatedPINCompleted"
+#define NOTIFICATION_PROFILE_UPDATED @"kProfileUpdated"
+
+#define NOTIFICATION_RETRY_BOOK @"kRetryBookIfFaield"
+#define NOTIFICATION_COMPLETE_BOOKING @"kBotificationCompletedBook"
+#define NOTIFICATION_CANCEL_BOOKING @"kBotificationCanceledBook"
+
+#define PASS @"Vatodriver123456"
+#define OLD_PASS @"VatoClient004"
+#define EMAIL @"vato.vn"
+#define ZONE_VN 1
+#define CITY @"Ho Chi Minh"
+
+// define ViewControllers
+#define HOME_VIEW_CONTROLLER            @"HomeViewController"
+#define HOME_NAV_VIEW_CONTROLLER        @"HomeNavViewController"
+#define MAIN_VIEW_CONTROLLER            @"KYDrawerController"
+#define LOGIN_VIEW_CONTROLLER           @"LoginViewController"
+
+// define Segue
+#define SEGUE_FOLLOWING         @"loginSegue"
+#define SEGUE_DRIVER_LIST       @"listDriverSegue"
+#define SEGUE_DRIVER_SEARCH     @"searchDriverSegue"
+#define SEGUE_DRIVER_DETAIL     @"driverDetailSegue"
+#define SEGUE_DRIVER_TRIPS      @"listTripsSegue"
+#define SEGUE_TRIP_PAYMENT      @"tripPaymentSegue"
+#define SEGUE_CAR_TYPE_LIST     @"cartypeSegue"
+#define SEGUE_CAR_GROUP_LIST    @"cargroupSegue"
+#define SEGUE_LIST_ROUND_TRIP   @"listRoundTripSegue"
+#define SEGUE_FIND_ROUND_TRIP   @"findRoundTripSegue"
+#define SEGUE_ROUND_TRIP_INFO   @"roundTripInfoSegue"
+#define SEGUE_SHOW_TRIP_MAPS    @"showTripMapsFromHome"
+#define SEGUE_SHOW_AUTO_BOOK    @"autobookSegue"
+
+// storyboad
+#define STORYBOARD_MAIN         @"Main"
+#define STORYBOARD_LOGIN        @"Login"
+#define STORYBOARD_PROFILE      @"Profile"
+#define STORYBOARD_WITHDRAW     @"WithdrawMoney"
+#define STORYBOARD_TUTORIAL     @"FCTutorialStartUp"
+
+// tables
+#define TABLE_MASTER            @"Masters"
+#define TABLE_PARTNER           @"Partners"
+#define TABLE_DRIVER            @"Driver"
+#define TABLE_USER              @"User"
+#define TABLE_CLIENT            @"Client"
+#define TABLE_CARS              @"Cars"
+#define TABLE_BOOK_TRIP         @"Trip"
+#define TABLE_TRIP_NOTIFY       @"TripNotify"
+#define TABLE_DRIVER_TRIP       @"DriverCurrentTrip"
+#define TABLE_BOOK_HIS          @"BookingHistoryV2"
+#define TABLE_FAVORITE          @"FavoriteV2"
+#define TABLE_CAR_TYPE          @"VivuServices"
+#define TABLE_CAR_GROUP         @"CarGroups"
+#define TABLE_FARE_SETTING      @"FareSettingV2"
+#define TABLE_FARE_PREDICATE    @"FarePredicateV2"
+#define TABLE_FARE_MANIFEST     @"Manifest"
+#define TABLE_FARE_MODIFIER     @"FareModifier"
+#define TABLE_SERVICE           @"ClientServicesV3"
+#define TABLE_ZONE              @"Zones"
+#define TABLE_APP_SETTINGS      @"SettingsV2"
+#define TABLE_DRIVER_ONLINE     @"DriverOnline"
+#define TABLE_PLACE_HIS         @"FavoritePlace"
+#define TABLE_PUNISHMENT        @"Punishments"
+#define TABLE_EVALUTION         @"CustomerReport/Rating"
+#define TABLE_CHATS             @"Chats"
+#define TABLE_SHIP_SERVICE      @"ShipService"
+#define TABLE_APP_CONFIGURE     @"AppConfigure"
+#define TABLE_CAMPAIGNS         @"Campaigns"
+
+
+typedef enum : NSUInteger {
+    None,
+    Phone,
+    Google,
+    Facebook,
+} LoginType;
+
+typedef enum : NSUInteger {
+    WAIT_FOR_APPROVAL = 2,
+    REJECTED = 8,
+    APPROVED = 128,
+    CANCELED = 256
+} ApproveLvl2Status;
+
+typedef enum : NSUInteger {
+    VATO = 1,
+    ZALOPAY = 2
+} TransMoneyChanel;
+
+typedef enum : NSUInteger {
+    DEPOSIT = 100,
+    BLOCK = 200,
+    GET_MONEY = 210,
+    GET_EXTRA = 211,
+    PAY_MONEY = 201,
+    PAY_RESIDUAL = 202,
+    TRANSFER = 300,
+    PROMOTION = 400,
+    PROMOTION_ACCEPTED = 410, // xet duyet tien hoa hong
+    COMMISION = 500,
+    DISCOUNT = 600,
+    STATION_COMMISSION = 700,
+    PUNISH_MONEY = 990,
+    CASHOUT = 4000,
+    CASHOUT_AGENCY = 10000,
+    ZALOPAY_TOPUP = 60000
+} TransType;
+
+typedef enum : NSUInteger {
+    UNKNOW = 0,
+    IOS = 1
+} Platfrom;
+
+typedef enum : NSUInteger {
+    NEW = 0,
+    READ = 2
+} PushStauts;
+
+typedef enum : NSUInteger
+{
+    NONE      = 0,
+    CLIENT    = 1 << 3,
+    DRIVER    = 1 << 4,
+    STATION   = 1 << 11,
+} UserType;
+
+typedef enum : NSUInteger
+{
+    ALL = 0,
+    STATION_EVENT = 16,
+    DISCOUNT_ON_BUDGET = 2,
+    ADVERTISE = 4,
+    NEW_USER = 8
+} EventType;
+
+typedef enum : NSInteger
+{
+    LVL_EMAIL = 1,
+    LVL_PHONE = 2,
+    LVL_CARD = 16,
+    LVL_DRIVER_LICENSE = 32,
+    LVL_VEHICLE_INSPECTION_CERTIFICATE = 64
+} VerifyLevel;
+
+typedef enum : NSInteger
+{
+    TRANS_PENDING = 0,
+    TRANS_CANCELED = 4,
+    TRANS_COMPLETED = 65536
+} TransactionStatus;
+
+
+typedef enum : NSInteger
+{
+    PERCENT = 1, // km %
+    AMOUNT = 2, // km gia tri
+} PromotionUnit;
+
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+#if LOG || DEV
+#define DLog(fmt, ...) NSLog((@"[Vivu App]  %s[Line %d] " fmt),   __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define DLog(...) {}
+#endif
+
+
+#define AppError(message) [AppLogger error:message className:__PRETTY_FUNCTION__ line:__LINE__];
+#define AppLog(message) [AppLogger info:message className:__PRETTY_FUNCTION__ line:__LINE__];
+#define AppLogCurrentUser() AppLog(@"Current user is not available.");
+
+#define localizedFor(text) [LocalizeObjC localizedFor:text]
+
+#define APP_VERSION_STRING [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] != nil ? [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] : @""

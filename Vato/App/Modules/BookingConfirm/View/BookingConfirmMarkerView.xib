@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="BookingConfirmMarkerView" customClass="BookingConfirmMarkerView" customModule="App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hEC-XJ-8FB">
+                    <rect key="frame" x="102.5" y="0.0" width="115" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ĐÓN BẠN Ở" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iP8-mf-dHE">
+                            <rect key="frame" x="17" y="5" width="58.5" height="12"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                            <color key="textColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7q-S7-oMj">
+                            <rect key="frame" x="17" y="19" width="70" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="140" id="0Ba-Vp-UEZ"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="Vtx-7W-RJS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="ic_chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="yHA-rb-J4s">
+                            <rect key="frame" x="93" y="14.5" width="6" height="11"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yHA-rb-J4s" firstAttribute="centerY" secondItem="hEC-XJ-8FB" secondAttribute="centerY" id="AOR-FR-NXx"/>
+                        <constraint firstItem="U7q-S7-oMj" firstAttribute="leading" secondItem="iP8-mf-dHE" secondAttribute="leading" id="K0o-1I-asG"/>
+                        <constraint firstAttribute="trailing" secondItem="yHA-rb-J4s" secondAttribute="trailing" constant="16" id="QVJ-I6-0Rw"/>
+                        <constraint firstItem="iP8-mf-dHE" firstAttribute="top" secondItem="hEC-XJ-8FB" secondAttribute="top" constant="5" id="a1M-9x-14g"/>
+                        <constraint firstItem="iP8-mf-dHE" firstAttribute="leading" secondItem="hEC-XJ-8FB" secondAttribute="leading" constant="17" id="cyv-DC-aNr"/>
+                        <constraint firstItem="U7q-S7-oMj" firstAttribute="top" secondItem="iP8-mf-dHE" secondAttribute="bottom" constant="2" id="fCt-Ay-8tq"/>
+                        <constraint firstAttribute="height" constant="40" id="m1T-0S-J9s"/>
+                        <constraint firstAttribute="trailing" secondItem="U7q-S7-oMj" secondAttribute="trailing" priority="750" constant="28" id="mtY-uc-wus"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="8" height="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_origin_booking_marker" translatesAutoresizingMaskIntoConstraints="NO" id="FPG-GN-kTG">
+                    <rect key="frame" x="147" y="55" width="30" height="40"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FPG-GN-kTG" secondAttribute="bottom" id="DPm-6z-qyK"/>
+                <constraint firstItem="hEC-XJ-8FB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JNZ-l0-4aV"/>
+                <constraint firstItem="hEC-XJ-8FB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nve-sQ-E6b"/>
+                <constraint firstItem="FPG-GN-kTG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="2" id="uVP-u9-PGo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerView" destination="hEC-XJ-8FB" id="7iX-L2-9Nv"/>
+                <outlet property="iconView" destination="FPG-GN-kTG" id="kCR-33-4y8"/>
+                <outlet property="lblMessage" destination="U7q-S7-oMj" id="R65-Pz-HgD"/>
+                <outlet property="lblTitle" destination="iP8-mf-dHE" id="Cwf-aE-lBe"/>
+            </connections>
+            <point key="canvasLocation" x="-228" y="-16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_chevron_right" width="6" height="11"/>
+        <image name="ic_origin_booking_marker" width="30" height="40"/>
+    </resources>
+</document>

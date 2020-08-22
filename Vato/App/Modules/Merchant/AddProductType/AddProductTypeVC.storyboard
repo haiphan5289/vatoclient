@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Product TypeVC-->
+        <scene sceneID="GzV-lN-fg7">
+            <objects>
+                <viewController storyboardIdentifier="AddProductTypeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vKn-9P-Ny8" customClass="AddProductTypeVC" customModule="VATO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BNZ-bO-rhc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2b5-z5-iSq">
+                                <rect key="frame" x="0.0" y="120" width="125" height="544"/>
+                                <connections>
+                                    <segue destination="Ohu-oT-K3R" kind="embed" id="r11-X8-cz9"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9L-qB-MwM">
+                                <rect key="frame" x="125" y="112" width="250" height="560"/>
+                                <connections>
+                                    <segue destination="JE8-Pj-bei" kind="embed" id="gng-UB-oIO"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh mục:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTY-98-dtu">
+                                <rect key="frame" x="16" y="60" width="73.666666666666671" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.38823529411764707" green="0.44705882352941173" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAZ-w9-Ci2">
+                                <rect key="frame" x="93.666666666666671" y="60" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Do-2q-ohI">
+                                <rect key="frame" x="16" y="688" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.32156862745098036" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A3r-CK-ceb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a9L-qB-MwM" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="68" id="Hqf-dK-PTA"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="4Do-2q-ohI" secondAttribute="trailing" constant="16" id="Hsa-8x-kyg"/>
+                            <constraint firstItem="xAZ-w9-Ci2" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="16" id="JCS-ol-V9o"/>
+                            <constraint firstItem="xAZ-w9-Ci2" firstAttribute="leading" secondItem="hTY-98-dtu" secondAttribute="trailing" constant="4" id="ajZ-2p-r7s"/>
+                            <constraint firstItem="4Do-2q-ohI" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" constant="16" id="b1j-tn-nxa"/>
+                            <constraint firstItem="hTY-98-dtu" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" constant="16" id="e3u-hF-nWS"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="bottom" secondItem="a9L-qB-MwM" secondAttribute="bottom" constant="106" id="erT-4N-YZ6"/>
+                            <constraint firstItem="a9L-qB-MwM" firstAttribute="leading" secondItem="2b5-z5-iSq" secondAttribute="trailing" id="fFx-He-0gh"/>
+                            <constraint firstItem="4Do-2q-ohI" firstAttribute="top" secondItem="a9L-qB-MwM" secondAttribute="bottom" constant="16" id="fKp-dP-3T7"/>
+                            <constraint firstItem="2b5-z5-iSq" firstAttribute="leading" secondItem="HgA-Aw-ocO" secondAttribute="leading" id="gbP-vO-LGQ"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="bottom" secondItem="2b5-z5-iSq" secondAttribute="bottom" constant="114" id="gpX-Og-ySz"/>
+                            <constraint firstItem="hTY-98-dtu" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="16" id="hag-he-EqC"/>
+                            <constraint firstItem="2b5-z5-iSq" firstAttribute="width" secondItem="BNZ-bO-rhc" secondAttribute="width" multiplier="1/3" id="oPv-EV-uwo"/>
+                            <constraint firstItem="2b5-z5-iSq" firstAttribute="top" secondItem="HgA-Aw-ocO" secondAttribute="top" constant="76" id="srX-Nb-6Pw"/>
+                            <constraint firstItem="HgA-Aw-ocO" firstAttribute="trailing" secondItem="a9L-qB-MwM" secondAttribute="trailing" id="zK6-Yg-hmh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HgA-Aw-ocO"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryTitleLabel" destination="hTY-98-dtu" id="xvY-CJ-Z1M"/>
+                        <outlet property="categoryValueLabel" destination="xAZ-w9-Ci2" id="lWs-Vg-yJj"/>
+                        <outlet property="saveButton" destination="4Do-2q-ohI" id="E9z-33-Ozi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0X-am-vwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="-129"/>
+        </scene>
+        <!--Merchant Main CategoryVC-->
+        <scene sceneID="nec-sJ-I6Z">
+            <objects>
+                <viewController id="Ohu-oT-K3R" customClass="MerchantMainCategoryVC" customModule="VATO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rs8-SO-B3x">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="544"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pjF-Xb-qUN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCq-oM-j9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="-916"/>
+        </scene>
+        <!--Merchant Sub CategoryVC-->
+        <scene sceneID="KAL-tC-emW">
+            <objects>
+                <viewController id="JE8-Pj-bei" customClass="MerchantSubCategoryVC" customModule="VATO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lzE-hG-eb2">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="560"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GRK-tF-2V3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ic9-0g-Y3B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="152"/>
+        </scene>
+    </scenes>
+</document>

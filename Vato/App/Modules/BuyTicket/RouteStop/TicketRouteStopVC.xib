@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketRouteStopVC">
+            <connections>
+                <outlet property="btnClose" destination="VAr-PG-wjn" id="sVj-ui-UUM"/>
+                <outlet property="containerView" destination="XWQ-hX-oKR" id="vUo-xF-jXE"/>
+                <outlet property="lblTitle" destination="IK4-nD-X8e" id="UEa-FZ-u19"/>
+                <outlet property="tableView" destination="ZgQ-UN-Q9Y" id="Rmw-3M-SDJ"/>
+                <outlet property="tableViewHeight" destination="DEb-EO-ztH" id="ZUH-xg-98p"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YGp-pt-YVy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWQ-hX-oKR">
+                    <rect key="frame" x="0.0" y="725" width="375" height="87"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Danh sách điểm đón" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-nD-X8e">
+                            <rect key="frame" x="103.33333333333333" y="24" width="168.66666666666669" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAr-PG-wjn">
+                            <rect key="frame" x="319" y="0.0" width="56" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="56" id="A2Z-es-G1N"/>
+                                <constraint firstAttribute="height" constant="44" id="MPi-oH-wrV"/>
+                            </constraints>
+                            <state key="normal" image="ic_header_close"/>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZgQ-UN-Q9Y">
+                            <rect key="frame" x="0.0" y="61" width="375" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="DEb-EO-ztH"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="VAr-PG-wjn" firstAttribute="top" secondItem="XWQ-hX-oKR" secondAttribute="top" id="2GM-Z1-oNb"/>
+                        <constraint firstAttribute="trailing" secondItem="VAr-PG-wjn" secondAttribute="trailing" id="7eq-tv-tX0"/>
+                        <constraint firstItem="IK4-nD-X8e" firstAttribute="centerX" secondItem="XWQ-hX-oKR" secondAttribute="centerX" id="E3Q-Hu-Re6"/>
+                        <constraint firstItem="ZgQ-UN-Q9Y" firstAttribute="top" secondItem="IK4-nD-X8e" secondAttribute="bottom" constant="16" id="FNK-0u-OeV"/>
+                        <constraint firstAttribute="bottom" secondItem="ZgQ-UN-Q9Y" secondAttribute="bottom" constant="26" id="YRA-IS-Xor"/>
+                        <constraint firstAttribute="trailing" secondItem="ZgQ-UN-Q9Y" secondAttribute="trailing" priority="1" id="dNl-xc-oKp"/>
+                        <constraint firstItem="IK4-nD-X8e" firstAttribute="top" secondItem="XWQ-hX-oKR" secondAttribute="top" constant="24" id="hXk-is-EcV"/>
+                        <constraint firstItem="ZgQ-UN-Q9Y" firstAttribute="leading" secondItem="XWQ-hX-oKR" secondAttribute="leading" id="u8C-Ic-9eA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XWQ-hX-oKR" secondAttribute="bottom" id="0fS-bJ-sqN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XWQ-hX-oKR" secondAttribute="trailing" id="84q-Ud-fbx"/>
+                <constraint firstItem="XWQ-hX-oKR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ffi-0s-jmb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="39.90147783251232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_header_close" width="56" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thông tin lái xe-->
+        <scene sceneID="555-cN-LTC">
+            <objects>
+                <tableViewController storyboardIdentifier="DriverDetailViewController" id="JsE-On-AVQ" customClass="DriverDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qrt-zn-Sli">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <sections>
+                            <tableViewSection id="whw-1z-oU9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="120" id="XIh-ds-V4D">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XIh-ds-V4D" id="S5Q-dc-fBO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app" translatesAutoresizingMaskIntoConstraints="NO" id="T9k-HQ-a3S">
+                                                    <rect key="frame" x="150" y="22.5" width="75" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="T9k-HQ-a3S" secondAttribute="height" multiplier="1:1" id="CoA-D4-xfq"/>
+                                                        <constraint firstAttribute="width" constant="75" id="IL1-T1-D3V"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T9k-HQ-a3S" firstAttribute="centerX" secondItem="S5Q-dc-fBO" secondAttribute="centerX" id="DOO-Ly-uu2"/>
+                                                <constraint firstItem="T9k-HQ-a3S" firstAttribute="centerY" secondItem="S5Q-dc-fBO" secondAttribute="centerY" id="EEc-ZC-KQ9"/>
+                                                <constraint firstItem="T9k-HQ-a3S" firstAttribute="centerY" secondItem="S5Q-dc-fBO" secondAttribute="centerY" id="OJv-6f-j9N"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="OJv-6f-j9N"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="LBB-B0-YxC" detailTextLabel="qmI-1r-LMz" rowHeight="50" style="IBUITableViewCellStyleValue1" id="ijS-E0-IaC">
+                                        <rect key="frame" x="0.0" y="155" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ijS-E0-IaC" id="DD8-av-2sj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Họ và tên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LBB-B0-YxC">
+                                                    <rect key="frame" x="16" y="15" width="69" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Đặng Ngọc Vũ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qmI-1r-LMz">
+                                                    <rect key="frame" x="254" y="15" width="105" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" textLabel="BEO-qt-g96" detailTextLabel="95T-Ce-qeg" rowHeight="50" style="IBUITableViewCellStyleValue1" id="odb-fj-8Ck">
+                                        <rect key="frame" x="0.0" y="205" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="odb-fj-8Ck" id="OhL-7q-eTc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Số điện thoại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BEO-qt-g96">
+                                                    <rect key="frame" x="16" y="15" width="94.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="01695305xxx" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="95T-Ce-qeg">
+                                                    <rect key="frame" x="259" y="15" width="100" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="CiL-h4-i9O">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="HgW-6b-iH4">
+                                        <rect key="frame" x="0.0" y="291" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HgW-6b-iH4" id="7Jf-zp-MdF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izc-ER-KGr" customClass="FCButton">
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="49.5"/>
+                                                    <color key="backgroundColor" red="1" green="0.47058823529999999" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="THÊM LÁI XE RIÊNG">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="addAddDriverToFavoriteClicked:" destination="JsE-On-AVQ" eventType="touchUpInside" id="UBL-Rf-5eH"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNF-cS-Bj9" customClass="FCButton">
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="49.5"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="CHẶN LÁI XE">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="addDriverToBlackListClicked:" destination="JsE-On-AVQ" eventType="touchUpInside" id="imJ-Kf-u9p"/>
+                                                    </connections>
+                                                </button>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZs-G9-h4v" customClass="FCButton">
+                                                    <rect key="frame" x="10" y="0.0" width="355" height="49.5"/>
+                                                    <color key="backgroundColor" red="0.98431372549999996" green="0.54901960780000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <state key="normal" title="XOÁ LÁI XE">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="removeDriverFromMyListClicked:" destination="JsE-On-AVQ" eventType="touchUpInside" id="Pw9-5f-c5O"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xNF-cS-Bj9" firstAttribute="leading" secondItem="7Jf-zp-MdF" secondAttribute="leading" constant="10" id="4Xb-nJ-BNb"/>
+                                                <constraint firstAttribute="trailing" secondItem="xNF-cS-Bj9" secondAttribute="trailing" constant="10" id="BIj-Od-tNk"/>
+                                                <constraint firstItem="xNF-cS-Bj9" firstAttribute="top" secondItem="izc-ER-KGr" secondAttribute="top" id="CfZ-fS-GwU"/>
+                                                <constraint firstItem="eZs-G9-h4v" firstAttribute="leading" secondItem="7Jf-zp-MdF" secondAttribute="leading" constant="10" id="IRM-WU-YWg"/>
+                                                <constraint firstAttribute="bottom" secondItem="eZs-G9-h4v" secondAttribute="bottom" id="RR7-Xj-bD1"/>
+                                                <constraint firstItem="izc-ER-KGr" firstAttribute="top" secondItem="7Jf-zp-MdF" secondAttribute="top" id="Wwh-6B-IUY"/>
+                                                <constraint firstAttribute="trailing" secondItem="izc-ER-KGr" secondAttribute="trailing" constant="10" id="Ybg-in-jiH"/>
+                                                <constraint firstAttribute="bottom" secondItem="izc-ER-KGr" secondAttribute="bottom" id="dld-cA-JbY"/>
+                                                <constraint firstItem="xNF-cS-Bj9" firstAttribute="bottom" secondItem="izc-ER-KGr" secondAttribute="bottom" id="fn0-LC-uZI"/>
+                                                <constraint firstAttribute="trailing" secondItem="eZs-G9-h4v" secondAttribute="trailing" constant="10" id="xfY-W2-cbR"/>
+                                                <constraint firstItem="eZs-G9-h4v" firstAttribute="top" secondItem="7Jf-zp-MdF" secondAttribute="top" id="ycW-Aj-5kM"/>
+                                                <constraint firstItem="izc-ER-KGr" firstAttribute="leading" secondItem="7Jf-zp-MdF" secondAttribute="leading" constant="10" id="zfR-OE-eKX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="JsE-On-AVQ" id="CLe-j5-aFv"/>
+                            <outlet property="delegate" destination="JsE-On-AVQ" id="YVm-0k-ypU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Thông tin lái xe" id="jTG-Gi-icX">
+                        <barButtonItem key="leftBarButtonItem" image="back" id="dhF-0b-huh">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="backPressed:" destination="JsE-On-AVQ" id="7cg-ho-H4W"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="avatar" destination="T9k-HQ-a3S" id="rAz-Mf-l02"/>
+                        <outlet property="btnAddBlackList" destination="xNF-cS-Bj9" id="pmJ-kR-CvB"/>
+                        <outlet property="btnAddnewOne" destination="izc-ER-KGr" id="Mcw-94-Dlj"/>
+                        <outlet property="btnRemoveDriver" destination="eZs-G9-h4v" id="0sG-jQ-8eC"/>
+                        <outlet property="lblName" destination="qmI-1r-LMz" id="zKr-TV-uIn"/>
+                        <outlet property="lblPhone" destination="95T-Ce-qeg" id="byj-RH-hjM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgS-oV-E2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.5999999999999" y="260.41979010494754"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app" width="200" height="200"/>
+        <image name="back" width="20" height="20"/>
+    </resources>
+</document>
